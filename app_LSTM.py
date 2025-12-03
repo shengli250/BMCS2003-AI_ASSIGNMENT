@@ -97,35 +97,37 @@ def main():
     st.title("🛎️ Hotel Intent Recognition Chatbot")
     st.markdown("Enter a user query to predict the intent and get a response.")
 
-    # Display the confidence threshold
-    st.info(f"**Confidence Threshold for Unrecognized Intent:** {CONFIDENCE_THRESHOLD*100:.0f}% (If model confidence is below this, intent will be set to `unrecognized_intent`)")
+    st.info(f"**Confidence Threshold for Unrecognized Intent:** {CONFIDENCE_THRESHOLD*100:.0f}%")
     
     # User Input
     user_input = st.text_input("**Your Query:**", placeholder="E.g., What time is check-in?")
     
-    # Button to trigger prediction
-    if st.button("**Get Chatbot Response**") and user_input:
-        with st.spinner('Analyzing query...'):
-            # Predict the intent
-            intent_name, response, confidence_display = predict_intent(user_input)
-            
-            # --- Display Results ---
-            st.markdown("---")
-            
-            st.subheader("💡 Analysis Result")
-            
-            # Highlight the predicted intent
-            if intent_name == "unrecognized_intent":
-                st.error(f"**Predicted Intent:** `{intent_name}` (Confidence: {confidence_display})")
-            else:
-                st.success(f"**Predicted Intent:** `{intent_name}` (Confidence: {confidence_display})")
+    # ***FIX: Create the button ONLY ONCE and store its state***
+    button_clicked = st.button("**Get Chatbot Response**") 
 
-            st.subheader("💬 Chatbot Response")
-            # Display the chatbot's answer
-            st.markdown(f"> **{response}**")
-            
-    elif st.button("Get Chatbot Response") and not user_input:
-        st.warning("Please enter a query to get a response.")
+    if button_clicked:
+        if user_input:
+            with st.spinner('Analyzing query...'):
+                # Predict the intent
+                intent_name, response, confidence_display = predict_intent(user_input)
+                
+                # --- Display Results ---
+                st.markdown("---")
+                
+                st.subheader("💡 Analysis Result")
+                
+                # Highlight the predicted intent
+                if intent_name == "unrecognized_intent":
+                    st.error(f"**Predicted Intent:** `{intent_name}` (Confidence: {confidence_display})")
+                else:
+                    st.success(f"**Predicted Intent:** `{intent_name}` (Confidence: {confidence_display})")
+
+                st.subheader("💬 Chatbot Response")
+                st.markdown(f"> **{response}**")
+                
+        else:
+            # Handle the case where the button is clicked but the input is empty
+            st.warning("Please enter a query to get a response.")
 
 if __name__ == "__main__":
     main()
