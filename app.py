@@ -19,6 +19,7 @@ def load_nltk_data():
     try:
         # 显式下载所有必需的资源
         nltk.download('punkt', quiet=True)
+        nltk.download('punkt_tab', quiet=True)
         nltk.download('stopwords', quiet=True)
         nltk.download('wordnet', quiet=True)
         
