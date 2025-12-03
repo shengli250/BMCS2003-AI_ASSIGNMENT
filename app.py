@@ -47,6 +47,26 @@ DATASET_PATH = 'dataset.csv' # 新增：数据集路径
 
 # --- 2. Load Model, Vectorizer, and Data ---
 
+def preprocess_text(text):
+    """Applies the same NLTK preprocessing steps as used during training."""
+    # 1. Convert to Lowercase
+    text = text.lower()
+    
+    # 2. Remove Punctuation and Special Characters
+    text = re.sub(r'[^\w\s]', '', text)
+    
+    # 3. Tokenization
+    tokens = word_tokenize(text)
+    
+    # 4. Stopword Removal
+    tokens = [word for word in tokens if word not in stop_words]
+    
+    # 5. Lemmatization (Key Enhancement)
+    tokens = [lemmatizer.lemmatize(word) for word in tokens]
+    
+    # Rejoin tokens into a single string
+    return ' '.join(tokens)
+
 @st.cache_resource
 def load_resources():
     """加载保存的模型、向量化器、数据集，并预处理数据集。"""
@@ -73,26 +93,6 @@ def load_resources():
     return model, vectorizer, df
 
 nb_model, vectorizer, df_data = load_resources()
-
-def preprocess_text(text):
-    """Applies the same NLTK preprocessing steps as used during training."""
-    # 1. Convert to Lowercase
-    text = text.lower()
-    
-    # 2. Remove Punctuation and Special Characters
-    text = re.sub(r'[^\w\s]', '', text)
-    
-    # 3. Tokenization
-    tokens = word_tokenize(text)
-    
-    # 4. Stopword Removal
-    tokens = [word for word in tokens if word not in stop_words]
-    
-    # 5. Lemmatization (Key Enhancement)
-    tokens = [lemmatizer.lemmatize(word) for word in tokens]
-    
-    # Rejoin tokens into a single string
-    return ' '.join(tokens)
 
 # --- 3. Predefined Responses ---
 
