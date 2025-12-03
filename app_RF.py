@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier # 导入模型类型
 
 # --- Configuration Parameters ---
 # Random Forest 概率通常较高，我们将阈值设为 0.80 
-CONFIDENCE_THRESHOLD = 0.80 
+CONFIDENCE_THRESHOLD = 0.7
 
 # --- A. CHATBOT RESPONSE LOOKUP TABLE ---
 RESPONSE_DICT = {
