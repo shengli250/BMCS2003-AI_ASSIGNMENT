@@ -1,0 +1,110 @@
+text,intent
+"How much is a room per night?",ask_room_price
+"What are your room rates?",ask_room_price
+"Price for a standard room?",ask_room_price
+"How much is a deluxe room?",ask_room_price
+"Tell me your room prices",ask_room_price
+"What is the cheapest room?",ask_room_price
+"How much does a night cost?",ask_room_price
+"What's the price for one night?",ask_room_price
+"Room price please",ask_room_price
+"How much for a family room?",ask_room_price
+
+"Do you have available rooms?",ask_availability
+"Any rooms available tomorrow?",ask_availability
+"Is there availability on Friday?",ask_availability
+"Do you still have open rooms?",ask_availability
+"I want to check room availability",ask_availability
+"Can I book for tonight?",ask_availability
+"Are you fully booked?",ask_availability
+"I need a room now, is it available?",ask_availability
+"Is there any room left?",ask_availability
+"Availability for next week?",ask_availability
+
+"What facilities do you offer?",ask_facilities
+"Do you have WiFi?",ask_facilities
+"Is breakfast included?",ask_facilities
+"Do you have parking?",ask_facilities
+"Is there a gym?",ask_facilities
+"Does the hotel have a swimming pool?",ask_facilities
+"What are the hotel amenities?",ask_facilities
+"Tell me your facilities",ask_facilities
+"Do you offer free WiFi and parking?",ask_facilities
+"What services are provided?",ask_facilities
+
+"Where is the hotel located?",ask_location
+"What is your address?",ask_location
+"How do I get to the hotel?",ask_location
+"Are you near KLCC?",ask_location
+"Which area are you in?",ask_location
+"What is your location?",ask_location
+"Where exactly are you?",ask_location
+"Send me your address",ask_location
+"Hotel location please",ask_location
+"Are you in the city centre?",ask_location
+
+"What time is check-in?",ask_checkin_time
+"When can I check in?",ask_checkin_time
+"Check-in time please",ask_checkin_time
+"Is early check-in allowed?",ask_checkin_time
+"When does check-in start?",ask_checkin_time
+"What is your check-in policy?",ask_checkin_time
+"Can I check in early?",ask_checkin_time
+"When do guests check in?",ask_checkin_time
+"Check-in hours?",ask_checkin_time
+"Tell me your check-in time",ask_checkin_time
+
+"What time is check-out?",ask_checkout_time
+"When do I need to check out?",ask_checkout_time
+"Check-out time please",ask_checkout_time
+"When does check-out end?",ask_checkout_time
+"Is late check-out possible?",ask_checkout_time
+"Check-out policy?",ask_checkout_time
+"Latest check-out time?",ask_checkout_time
+"What time should I leave?",ask_checkout_time
+"When must guests check out?",ask_checkout_time
+"Check-out schedule?",ask_checkout_time
+
+"How do I make a booking?",ask_booking
+"I want to book a room",ask_booking
+"How can I reserve a room?",ask_booking
+"Can I book online?",ask_booking
+"Booking process please",ask_booking
+"I want to make a reservation",ask_booking
+"How do I reserve a room?",ask_booking
+"Where can I book?",ask_booking
+"I need to book a room",ask_booking
+"Tell me how to book",ask_booking
+
+"What is your cancellation policy?",ask_cancellation
+"Can I cancel my booking?",ask_cancellation
+"Is cancellation free?",ask_cancellation
+"Do you charge cancellation fees?",ask_cancellation
+"How to cancel my reservation?",ask_cancellation
+"Explain your cancellation rules",ask_cancellation
+"Can I get a refund if I cancel?",ask_cancellation
+"What happens if I cancel?",ask_cancellation
+"Is last-minute cancellation allowed?",ask_cancellation
+"Tell me your cancellation policy",ask_cancellation
+
+"Hello",greeting
+"Hi there",greeting
+"Good morning",greeting
+"Good evening",greeting
+"Hey",greeting
+"Hi",greeting
+"Hello hotel",greeting
+"Greetings",greeting
+"Hey there",greeting
+"Good day",greeting
+
+"Bye",goodbye
+"Goodbye",goodbye
+"See you",goodbye
+"Thanks, bye",goodbye
+"Talk to you later",goodbye
+"I'm leaving now",goodbye
+"Ok bye",goodbye
+"Thanks goodbye",goodbye
+"Have a good day",goodbye
+"See you soon",goodbye

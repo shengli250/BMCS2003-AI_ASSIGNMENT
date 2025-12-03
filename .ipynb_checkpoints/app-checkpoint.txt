@@ -6,40 +6,6 @@ import numpy as np
 from joblib import load
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-import nltk 
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
-import re
-
-try:
-    # 这些变量现在是全局的，并且在脚本开始时就被定义了
-    stop_words = set(stopwords.words('english'))
-    lemmatizer = WordNetLemmatizer()
-except LookupError:
-    # 如果下载失败，我们在这里可以捕获并提供错误
-    st.error("NLTK data (stopwords, wordnet) not found. Please ensure resources are downloaded and accessible.")
-    st.stop()
-
-# --- NLTK 资源加载函数 (使用 Streamlit 缓存) ---
-@st.cache_resource
-def load_nltk_data():
-    """Download NLTK resources once and initialize tools."""
-    try:
-        # 显式下载所有必需的资源
-        nltk.download('punkt', quiet=True)
-        nltk.download('punkt_tab', quiet=True)
-        nltk.download('stopwords', quiet=True)
-        nltk.download('wordnet', quiet=True)
-        
-        return stop_words, lemmatizer
-    except Exception as e:
-        st.error(f"Failed to download NLTK data: {e}")
-        st.stop()
-
-# 在应用启动时调用一次
-load_nltk_data()
-
 # --- 1. Constants and Initial Setup ---
 MODEL_PATH = 'naive_bayes_intent_model.joblib'
 VECTORIZER_PATH = 'tfidf_vectorizer.joblib'
@@ -72,26 +38,6 @@ def load_resources():
 
 nb_model, vectorizer, df_data = load_resources()
 
-def preprocess_text(text):
-    """Applies the same NLTK preprocessing steps as used during training."""
-    # 1. Convert to Lowercase
-    text = text.lower()
-    
-    # 2. Remove Punctuation and Special Characters
-    text = re.sub(r'[^\w\s]', '', text)
-    
-    # 3. Tokenization
-    tokens = word_tokenize(text)
-    
-    # 4. Stopword Removal
-    tokens = [word for word in tokens if word not in stop_words]
-    
-    # 5. Lemmatization (Key Enhancement)
-    tokens = [lemmatizer.lemmatize(word) for word in tokens]
-    
-    # Rejoin tokens into a single string
-    return ' '.join(tokens)
-
 # --- 3. Predefined Responses ---
 
 responses = {
@@ -114,7 +60,7 @@ def chatbot_reply_nb(user_input, model, vectorizer, responses):
     if not user_input.strip():
         return "Please enter a question to start the conversation.", "Empty Input", 0.0
 
-    processed_input = preprocess_text(user_input)
+    processed_input = user_input.lower()
     vector = vectorizer.transform([processed_input])
     probabilities = model.predict_proba(vector)[0]
     intent_index = np.argmax(probabilities)
@@ -191,3 +137,6 @@ for message in st.session_state.messages:
 if prompt := st.chat_input("Ask a question about the hotel:"):
     handle_chat_interaction(prompt)
 
+st.markdown("---")
+st.subheader("💡 Supported Intents")
+st.code(", ".join(responses.keys()))
