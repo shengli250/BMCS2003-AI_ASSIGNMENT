@@ -68,6 +68,8 @@ def load_resources():
     except Exception as e:
         st.error(f"An error occurred while loading the dataset: {e}")
 
+    return model, vectorizer, df
+
 nb_model, vectorizer, df_data = load_resources()
 
 def preprocess_text(text):
