@@ -47,6 +47,29 @@ DATASET_PATH = 'dataset.csv' # 新增：数据集路径
 
 # --- 2. Load Model, Vectorizer, and Data ---
 
+@st.cache_resource # 缓存资源以避免在每次重运行时重复加载
+def load_resources():
+    """加载保存的模型、向量化器和数据集。"""
+    model, vectorizer, df = None, None, None
+    try:
+        model = load(MODEL_PATH)
+        vectorizer = load(VECTORIZER_PATH)
+    except FileNotFoundError:
+        st.error(f"Error: Could not find model or vectorizer files. Please ensure '{MODEL_PATH}' and '{VECTORIZER_PATH}' are present.")
+        st.stop()
+    except Exception as e:
+        st.error(f"An error occurred while loading resources: {e}")
+        st.stop()
+        
+    try:
+        df = pd.read_csv(DATASET_PATH)
+    except FileNotFoundError:
+        st.warning(f"Warning: Could not find dataset file '{DATASET_PATH}'. Quick query buttons will be disabled.")
+    except Exception as e:
+        st.error(f"An error occurred while loading the dataset: {e}")
+
+nb_model, vectorizer, df_data = load_resources()
+
 def preprocess_text(text):
     """Applies the same NLTK preprocessing steps as used during training."""
     # 1. Convert to Lowercase
@@ -66,33 +89,6 @@ def preprocess_text(text):
     
     # Rejoin tokens into a single string
     return ' '.join(tokens)
-
-@st.cache_resource
-def load_resources():
-    """加载保存的模型、向量化器、数据集，并预处理数据集。"""
-    model, vectorizer, df = None, None, None
-    try:
-        model = load(MODEL_PATH)
-        vectorizer = load(VECTORIZER_PATH)
-    # ... (File loading error handling remains the same) ...
-    except Exception as e:
-        st.error(f"An error occurred while loading resources: {e}")
-        st.stop()
-        
-    try:
-        df = pd.read_csv(DATASET_PATH)
-        
-        # 🌟 新增：对整个数据集进行预处理，并创建用于快速匹配的 Series
-        df['cleaned_text'] = df['text'].apply(preprocess_text)
-        
-    except FileNotFoundError:
-        st.warning(f"Warning: Could not find dataset file '{DATASET_PATH}'. Quick query buttons will be disabled.")
-    except Exception as e:
-        st.error(f"An error occurred while loading the dataset: {e}")
-        
-    return model, vectorizer, df
-
-nb_model, vectorizer, df_data = load_resources()
 
 # --- 3. Predefined Responses ---
 
