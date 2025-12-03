@@ -47,22 +47,24 @@ DATASET_PATH = 'dataset.csv' # 新增：数据集路径
 
 # --- 2. Load Model, Vectorizer, and Data ---
 
-@st.cache_resource # 缓存资源以避免在每次重运行时重复加载
+@st.cache_resource
 def load_resources():
-    """加载保存的模型、向量化器和数据集。"""
+    """加载保存的模型、向量化器、数据集，并预处理数据集。"""
     model, vectorizer, df = None, None, None
     try:
         model = load(MODEL_PATH)
         vectorizer = load(VECTORIZER_PATH)
-    except FileNotFoundError:
-        st.error(f"Error: Could not find model or vectorizer files. Please ensure '{MODEL_PATH}' and '{VECTORIZER_PATH}' are present.")
-        st.stop()
+    # ... (File loading error handling remains the same) ...
     except Exception as e:
         st.error(f"An error occurred while loading resources: {e}")
         st.stop()
         
     try:
         df = pd.read_csv(DATASET_PATH)
+        
+        # 🌟 新增：对整个数据集进行预处理，并创建用于快速匹配的 Series
+        df['cleaned_text'] = df['text'].apply(preprocess_text)
+        
     except FileNotFoundError:
         st.warning(f"Warning: Could not find dataset file '{DATASET_PATH}'. Quick query buttons will be disabled.")
     except Exception as e:
@@ -110,11 +112,31 @@ responses = {
 # --- 4. Chatbot Logic Function (Same as before) ---
 
 def chatbot_reply_nb(user_input, model, vectorizer, responses):
-    """根据用户输入预测意图并返回相应回复。"""
+    """根据用户输入预测意图并返回相应回复，优先使用直接匹配。"""
     if not user_input.strip():
         return "Please enter a question to start the conversation.", "Empty Input", 0.0
 
+    # 1. 预处理用户输入
     processed_input = preprocess_text(user_input)
+    
+    # ----------------------------------------------------
+    # 🌟 新增：直接匹配/检索逻辑
+    # ----------------------------------------------------
+    if df_data is not None and 'cleaned_text' in df_data.columns:
+        # 尝试在预处理后的数据集列中查找匹配项
+        match = df_data[df_data['cleaned_text'] == processed_input]
+        
+        if not match.empty:
+            # 找到完全匹配的项，直接返回该意图
+            intent = match.iloc[0]['intent']
+            confidence = 1.0 # 100% 置信度
+            reply = responses.get(intent, f"Direct Match Found: Intent **'{intent}'**.")
+            predicted_intent = f"Direct Match: {intent}"
+            return reply, predicted_intent, confidence
+    # ----------------------------------------------------
+    
+    # 如果没有直接匹配，则继续进行模型预测 (原逻辑)
+    
     vector = vectorizer.transform([processed_input])
     probabilities = model.predict_proba(vector)[0]
     intent_index = np.argmax(probabilities)
@@ -127,6 +149,7 @@ def chatbot_reply_nb(user_input, model, vectorizer, responses):
         reply = f"Sorry, I'm not sure I understand. My predicted intent ('{intent}') had a low confidence score ({confidence:.2f}). Could you please rephrase?"
         predicted_intent = "Fallback (Low Confidence)"
     else:
+        # 意图成功识别，但不是直接匹配
         reply = responses.get(intent, f"Sorry, I predicted the intent **'{intent}'** (Confidence: {confidence:.2f}), but I don't have a specific response for that yet. Please rephrase your question.")
         predicted_intent = intent
 
