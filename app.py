@@ -12,13 +12,28 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import re
 
-# Initialize NLTK resources
-try:
-    stop_words = set(stopwords.words('english'))
-    lemmatizer = WordNetLemmatizer()
-except LookupError:
-    st.error("NLTK data (stopwords, wordnet) not found. Please ensure resources are downloaded and accessible.")
-    st.stop()
+# --- NLTK 资源加载函数 (使用 Streamlit 缓存) ---
+@st.cache_resource
+def load_nltk_data():
+    """Download NLTK resources once and initialize tools."""
+    try:
+        # 显式下载所有必需的资源
+        nltk.download('punkt', quiet=True)
+        nltk.download('stopwords', quiet=True)
+        nltk.download('wordnet', quiet=True)
+        
+        # 初始化 NLTK 工具
+        global stop_words, lemmatizer
+        stop_words = set(stopwords.words('english'))
+        lemmatizer = WordNetLemmatizer()
+        
+        return stop_words, lemmatizer
+    except Exception as e:
+        st.error(f"Failed to download NLTK data: {e}")
+        st.stop()
+
+# 在应用启动时调用一次
+load_nltk_data()
 
 # --- 1. Constants and Initial Setup ---
 MODEL_PATH = 'naive_bayes_intent_model.joblib'
