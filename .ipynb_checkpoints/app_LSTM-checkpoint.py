@@ -12,16 +12,16 @@ CONFIDENCE_THRESHOLD = 0.75 # New: Threshold to classify as "unrecognized intent
 # --- A. CHATBOT RESPONSE LOOKUP TABLE ---
 # This dictionary maps the predicted intent name (string) to a fixed response.
 RESPONSE_DICT = {
-    "ask_room_price": "Our standard room price is 150 MYR per night, and a deluxe room is 250 MYR. Which room type would you like to inquire about?",
-    "ask_availability": "Could you please provide the check-in and check-out dates? I can check real-time room availability for you.",
-    "ask_facilities": "We offer free Wi-Fi, complimentary parking, an indoor swimming pool, and a 24-hour gym.",
-    "ask_location": "Our hotel is situated in the city center, close to the central station and major shopping areas. You can find the full address on our website.",
-    "ask_checkin_time": "Our standard check-in time is 3:00 PM. Please contact the front desk if you require early check-in.",
-    "ask_checkout_time": "Please ensure you check out before 12:00 PM (noon). Late check-outs may incur an additional charge.",
-    "ask_booking": "You can make a reservation through our official website, by calling our booking hotline, or via major online travel platforms.",
-    "ask_cancellation": "Our cancellation policy depends on your booking type. Generally, cancellation is free if done 24 hours in advance.",
-    "greeting": "Hello! I am happy to assist you. How may I help you with your booking or answer your questions?",
-    "goodbye": "Thank you for reaching out! Have a wonderful day. Feel free to contact me if you have any other questions.",
+    "ask_room_price": "Our rooms start from RM180 per night.",
+    "ask_availability": "We currently have several rooms available.",
+    "ask_facilities": "We offer free Wi-Fi, breakfast, pool, gym and parking.",
+    "ask_location": "We are located in Kuala Lumpur City Centre (KLCC).",
+    "ask_checkin_time" : "Check-in time is from 2:00 PM.",
+    "ask_checkout_time" : "Check-out time is at 12:00 PM.",
+    "ask_booking" : "You can book directly through our website or at the front desk.",
+    "ask_cancellation" : "Cancellations are free up to 24 hours before arrival.",
+    "greeting" : "Hello! How may I assist you today?",
+    "goodbye" : "Goodbye! Have a great day!",
     # Default response for unrecognized intents
     "unrecognized_intent": "I apologize, but I currently cannot understand your request. Could you please try rephrasing your question?", 
 }
