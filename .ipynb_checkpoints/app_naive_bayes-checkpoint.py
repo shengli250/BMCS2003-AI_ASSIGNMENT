@@ -15,7 +15,6 @@ try:
     nltk.data.find('corpora/wordnet')
     nltk.data.find('corpora/stopwords')
 except LookupError:
-    st.info("Downloading NLTK resources...")
     try:
         # Note: The original code had an extra 'tokenizers/punkt_tab' check, which is unusual.
         # Standardizing the download attempts here for common resources.
@@ -23,7 +22,6 @@ except LookupError:
         nltk.download('punkt_tab')
         nltk.download('wordnet')
         nltk.download('stopwords')
-        st.success("NLTK Resources downloaded successfully!")
     except Exception as e:
         st.error(f"Failed to download NLTK resources: {e}")
         st.stop()
