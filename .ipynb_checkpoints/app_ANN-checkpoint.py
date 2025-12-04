@@ -30,6 +30,21 @@ RESPONSE_DICT = {
     "unrecognized_intent": "I apologize, but I currently cannot understand your request. Could you please try rephrasing your question?", 
 }
 
+# Mapping of intent keys to user-friendly natural language prompts for buttons
+PROMPT_MAPPING = {
+    "ask_room_price": "What is the room price?",
+    "ask_availability": "Are rooms available?",
+    "ask_facilities": "Tell me about the facilities.",
+    "ask_location": "What is the hotel's location?",
+    "ask_checkin_time" : "What time is check-in?",
+    "ask_checkout_time" : "What time is check-out?",
+    "ask_booking" : "How do I book a room?",
+    "ask_cancellation" : "What is the cancellation policy?",
+}
+
+# Valid intents to be used for random suggestions
+SUGGESTED_INTENTS = list(PROMPT_MAPPING.keys())
+
 # --- B. NLTK Download and Preprocessing Setup ---
 # Use st.cache_resource to ensure NLTK resources are downloaded only once
 @st.cache_resource(show_spinner="Downloading NLTK resources...")
