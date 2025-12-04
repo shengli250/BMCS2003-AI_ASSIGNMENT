@@ -6,12 +6,12 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import re
-# 导入 MLPClassifier 来获取类型提示 (可选)
+# Optional: Import MLPClassifier for type hinting
 from sklearn.neural_network import MLPClassifier 
 
 # --- Configuration Parameters ---
 MAX_SEQUENCE_LENGTH = 20 # Although less relevant for TFIDF, keeping it for context
-CONFIDENCE_THRESHOLD = 0.70 # 设置置信度阈值，低于此值则视为“无法识别的意图”
+CONFIDENCE_THRESHOLD = 0.70 # Set confidence threshold; if prediction score is below this, intent is "unrecognized"
 
 # --- A. CHATBOT RESPONSE LOOKUP TABLE ---
 RESPONSE_DICT = {
@@ -30,13 +30,13 @@ RESPONSE_DICT = {
 }
 
 # --- B. NLTK Download and Preprocessing Setup ---
-# 使用 st.cache_resource 来确保 NLTK 资源只下载一次
+# Use st.cache_resource to ensure NLTK resources are downloaded only once
 @st.cache_resource(show_spinner="Downloading NLTK resources...")
 def download_nltk_resources():
     """Downloads necessary NLTK resources into the Streamlit cache."""
     try:
         nltk.download('punkt', quiet=True)
-        nltk.download('punkt_tab', quiet=True) # This may not be necessary
+        nltk.download('punkt_tab', quiet=True)
         nltk.download('wordnet', quiet=True)
         nltk.download('stopwords', quiet=True)
         return True
@@ -44,13 +44,13 @@ def download_nltk_resources():
         st.error(f"Failed to download NLTK resources: {e}")
         return False
 
-# 执行 NLTK 资源下载
+# Execute NLTK resource download
 if download_nltk_resources():
-    # 只有下载成功后才初始化 NLTK 对象
+    # Only initialize NLTK objects if download was successful
     stop_words = set(stopwords.words('english'))
     lemmatizer = WordNetLemmatizer()
 else:
-    # 如果下载失败，使用空集和 None 来避免后续错误
+    # If download fails, use empty set and None to avoid subsequent errors
     stop_words = set()
     lemmatizer = None
 
@@ -71,18 +71,18 @@ def preprocess_text(text):
 def load_resources():
     """Loads the model, vectorizer, and label encoder from files."""
     try:
-        # Load MLPClassifier Model
-        ann_model = joblib.load('ann_intent_model.joblib')
+        # Load the model trained with the dense matrix
+        ann_model = joblib.load('ann_intent_model_dense.joblib')
         
-        # Load TFIDF Vectorizer
-        vectorizer = joblib.load('tfidf_vectorizerANN.joblib')
+        # Ensure the correct TFIDF Vectorizer filename is loaded
+        vectorizer = joblib.load('ann_tfidf_vectorizer_dense.joblib')
         
-        # Load LabelEncoder
-        le = joblib.load('label_encoder.joblib')
+        # Ensure the correct LabelEncoder filename is loaded
+        le = joblib.load('ann_label_encoder_dense.joblib')
         
         return ann_model, vectorizer, le
     except FileNotFoundError as e:
-        st.error(f"Error loading required model files. Please ensure all files (ann_intent_model.joblib, tfidf_vectorizerANN.joblib, label_encoder.joblib) are in the same directory. Missing file: {e.filename}")
+        st.error(f"Error loading required model files. Please ensure all files (ann_intent_model_dense.joblib, tfidf_vectorizer_dense.joblib, label_encoder_dense.joblib) are in the same directory. Missing file: {e.filename}")
         return None, None, None
 
 ann_model, vectorizer, le = load_resources()
@@ -95,13 +95,16 @@ def predict_intent(text):
     if ann_model is None or vectorizer is None or le is None or not lemmatizer:
         return "setup_error", RESPONSE_DICT.get("unrecognized_intent"), "N/A"
 
-    # 1. Preprocessing and Feature Extraction
+    # 1. Preprocessing and Feature Extraction (Sparse Matrix)
     user_input_cleaned = preprocess_text(text)
     vector = vectorizer.transform([user_input_cleaned])
 
+    # Convert sparse TFIDF vector to dense matrix, as MLPClassifier was trained on dense data
+    vector_dense = vector.toarray()
+    
     # 2. Get Probability Predictions
     # MLPClassifier provides probabilities via predict_proba
-    predictions_proba = ann_model.predict_proba(vector)[0]
+    predictions_proba = ann_model.predict_proba(vector_dense)[0] # Use dense matrix
     
     # Get the index (ID) of the highest probability
     predicted_id = np.argmax(predictions_proba)
@@ -123,45 +126,45 @@ def predict_intent(text):
     return intent_name, response, confidence_display
 
 
-# --- E. Streamlit App Layout (带聊天记录) ---
+# --- E. Streamlit App Layout (with Chat History) ---
 def main():
     st.set_page_config(page_title="ANN Intent Chatbot (Chat History)", layout="centered")
 
     st.title("🤖 Hotel Chatbot (ANN/MLP)")
     st.caption(f"Confidence Threshold: **{CONFIDENCE_THRESHOLD*100:.0f}%**")
 
-    # 1. 初始化聊天历史 (Session State)
+    # 1. Initialize chat history (Session State)
     if "messages" not in st.session_state:
         st.session_state.messages = []
-        # 增加一个初始的问候消息
+        # Add an initial greeting message
         st.session_state.messages.append({"role": "assistant", "content": RESPONSE_DICT['greeting']})
 
-    # 2. 显示聊天历史
-    # 使用 st.chat_message 来渲染对话气泡
+    # 2. Display chat history
+    # Use st.chat_message to render dialogue bubbles
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
-            # 如果是助手的回复，额外显示置信度和意图
+            # If it's the assistant's reply, additionally show confidence and intent
             if message["role"] == "assistant" and "intent" in message:
                 st.caption(f"Intent: **{message['intent']}** | Confidence: **{message['confidence']}**")
             st.markdown(message["content"])
 
-    # 3. 处理用户输入
-    # 使用 st.chat_input 替换 st.text_input 和 st.button
+    # 3. Process user input
+    # Use st.chat_input to replace st.text_input and st.button
     user_input = st.chat_input("How can I help you?")
     
     if user_input:
-        # 3a. 将用户输入添加到历史记录并显示
+        # 3a. Add user input to history and display
         st.session_state.messages.append({"role": "user", "content": user_input})
         
-        # 立即在界面上显示用户输入
+        # Display user input immediately on the interface
         with st.chat_message("user"):
             st.markdown(user_input)
 
-        # 3b. 进行预测并生成回复
+        # 3b. Perform prediction and generate reply
         with st.spinner('Analyzing query...'):
             intent_name, response, confidence_display = predict_intent(user_input)
             
-            # 3c. 将助手回复添加到历史记录
+            # 3c. Add assistant reply to history
             st.session_state.messages.append({
                 "role": "assistant", 
                 "content": response,
@@ -169,9 +172,9 @@ def main():
                 "confidence": confidence_display
             })
 
-            # 3d. 在界面上显示助手回复
+            # 3d. Display assistant reply on the interface
             with st.chat_message("assistant"):
-                # 高亮显示意图和置信度
+                # Highlight intent and confidence
                 st.caption(f"Intent: **{intent_name}** | Confidence: **{confidence_display}**")
                 st.markdown(response)
 
