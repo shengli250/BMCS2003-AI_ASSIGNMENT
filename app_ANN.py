@@ -234,7 +234,6 @@ def main():
             })
             
             # Rerun again to show the assistant's response in the main loop display
-            debug_log.info("Triggering RERUN 2 to display assistant response.")
             st.rerun()
 
             # 4d. Display assistant reply on the interface
