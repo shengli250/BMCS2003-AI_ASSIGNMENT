@@ -1,0 +1,24 @@
+{
+    "greeting": "Hello! Welcome to Grand Hotel Bot. I can help you with room bookings, hotel info, and services. How may I assist you today?",
+    "goodbye": "Thank you for chatting with us. We hope to see you soon at Grand Hotel! Have a wonderful day.",
+    "ask_room_price": "Our rates per night are: Standard Room (RM150), Family Room (RM250), and Executive Suite (RM300). Prices may vary by season. Please check our website for real-time rates.",
+    "ask_availability": "We usually have rooms available for most dates. You can check real-time availability and vacant dates directly on our official website: www.grandhotel.com.my",
+    
+    "ask_facilities": "Yes! We offer Free Parking and Laundry Service. Rooms have AC, mini-fridge, loker, and hairdryer. Facilities include free WiFi, an outdoor pool (Level 3), a 24/7 gym, and an on-site restaurant.",
+    
+    "ask_location": "We are at 18 Jalan Alor, KL City Center. We are 5 mins walk from the MRT station.",
+    "ask_checkin_time": "Check-in starts at 3:00 PM. Early check-in is subject to availability. You can drop your luggage at the concierge for free if you arrive early. Please note that a security deposit is required upon check-in, which will be refunded upon check-out.",
+    "ask_checkout_time": "Check-out is by 12:00 PM. Late check-out until 2:00 PM costs RM50 (subject to availability). Simply drop your key card at the desk when leaving.",
+    "ask_booking": "For reservations, please visit our website at www.grandhotel.com.my, call our Reservation Department at +603-5555-0199, or visit our hotel in person for manual booking. We require a valid ID for all bookings.",
+    "ask_cancellation": "Free cancellation is available up to 24 hours before check-in. Cancellations within 24 hours (or no-shows) are charged the first night's rate.",
+    "ask_contact_support": "For urgent matters, please call the Front Desk at +60-3-5555-0199. For complaints or other inquiries, please email us at support@grandhotel.com.",
+    "ask_payment_methods": "We accept Cash (MYR), Credit Cards (Visa/Master/Amex), and E-wallets (GrabPay/TnG). A refundable security deposit of RM100 is required upon check-in.",
+    "ask_pet_policy": "We are Pet-Friendly! Dogs/cats <10kg are welcome (fee: RM50/stay). Service animals stay free. Please note: Pets are not allowed in the restaurant or pool area.",
+    "ask_smoking_policy": "All guest rooms are strictly Non-Smoking (RM500 fine applies). Smoking is ONLY allowed in the designated area outside the main lobby entrance.",
+    "ask_luggage_storage": "Yes! We offer free, secure luggage storage 24/7. You can leave your bags with us before check-in or after check-out while you explore the city.",
+    "ask_child_policy": "Kids <12 stay free (existing bedding). Baby cots and high chairs are provided free on request. We do NOT offer babysitting services, but have a kids' play corner in the lobby.",
+    "ask_breakfast_details": "Buffet breakfast (Halal) is 6:30-10:30 AM at the Garden Cafe. Price: RM35/adult. We offer Nasi Lemak, Western, and Vegan options. In-room breakfast is also available.",
+    "ask_airport_transfer": "We offer a private limo (RM80) or van (RM120). Please book 24h in advance at the Front Desk. Alternatively, Grab cars are easily available (~RM65 to KLIA).",
+    "ask_nearby_attractions": "Top spots nearby: KLCC Twin Towers (1km), Pavilion Mall (Shopping), National Museum (Culture), and Jalan Alor (Street Food). The concierge desk has free city maps.",
+    "ask_lost_item": "Please visit the Front Desk immediately to report lost items. Our security team will check the Lost & Found log and assist you in locating your belongings."
+}

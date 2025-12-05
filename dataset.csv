@@ -1,110 +1,2002 @@
 text,intent
-"How much is a room per night?",ask_room_price
-"What are your room rates?",ask_room_price
-"Price for a standard room?",ask_room_price
-"How much is a deluxe room?",ask_room_price
-"Tell me your room prices",ask_room_price
-"What is the cheapest room?",ask_room_price
-"How much does a night cost?",ask_room_price
-"What's the price for one night?",ask_room_price
-"Room price please",ask_room_price
-"How much for a family room?",ask_room_price
-
-"Do you have available rooms?",ask_availability
-"Any rooms available tomorrow?",ask_availability
-"Is there availability on Friday?",ask_availability
-"Do you still have open rooms?",ask_availability
-"I want to check room availability",ask_availability
-"Can I book for tonight?",ask_availability
-"Are you fully booked?",ask_availability
-"I need a room now, is it available?",ask_availability
-"Is there any room left?",ask_availability
-"Availability for next week?",ask_availability
-
-"What facilities do you offer?",ask_facilities
-"Do you have WiFi?",ask_facilities
-"Is breakfast included?",ask_facilities
-"Do you have parking?",ask_facilities
-"Is there a gym?",ask_facilities
-"Does the hotel have a swimming pool?",ask_facilities
-"What are the hotel amenities?",ask_facilities
-"Tell me your facilities",ask_facilities
-"Do you offer free WiFi and parking?",ask_facilities
-"What services are provided?",ask_facilities
-
-"Where is the hotel located?",ask_location
-"What is your address?",ask_location
-"How do I get to the hotel?",ask_location
-"Are you near KLCC?",ask_location
-"Which area are you in?",ask_location
-"What is your location?",ask_location
-"Where exactly are you?",ask_location
-"Send me your address",ask_location
-"Hotel location please",ask_location
-"Are you in the city centre?",ask_location
-
-"What time is check-in?",ask_checkin_time
-"When can I check in?",ask_checkin_time
-"Check-in time please",ask_checkin_time
-"Is early check-in allowed?",ask_checkin_time
-"When does check-in start?",ask_checkin_time
-"What is your check-in policy?",ask_checkin_time
-"Can I check in early?",ask_checkin_time
-"When do guests check in?",ask_checkin_time
-"Check-in hours?",ask_checkin_time
-"Tell me your check-in time",ask_checkin_time
-
-"What time is check-out?",ask_checkout_time
-"When do I need to check out?",ask_checkout_time
-"Check-out time please",ask_checkout_time
-"When does check-out end?",ask_checkout_time
-"Is late check-out possible?",ask_checkout_time
-"Check-out policy?",ask_checkout_time
-"Latest check-out time?",ask_checkout_time
-"What time should I leave?",ask_checkout_time
-"When must guests check out?",ask_checkout_time
-"Check-out schedule?",ask_checkout_time
-
-"How do I make a booking?",ask_booking
-"I want to book a room",ask_booking
-"How can I reserve a room?",ask_booking
-"Can I book online?",ask_booking
-"Booking process please",ask_booking
-"I want to make a reservation",ask_booking
-"How do I reserve a room?",ask_booking
-"Where can I book?",ask_booking
-"I need to book a room",ask_booking
-"Tell me how to book",ask_booking
-
-"What is your cancellation policy?",ask_cancellation
-"Can I cancel my booking?",ask_cancellation
-"Is cancellation free?",ask_cancellation
-"Do you charge cancellation fees?",ask_cancellation
-"How to cancel my reservation?",ask_cancellation
-"Explain your cancellation rules",ask_cancellation
-"Can I get a refund if I cancel?",ask_cancellation
-"What happens if I cancel?",ask_cancellation
-"Is last-minute cancellation allowed?",ask_cancellation
-"Tell me your cancellation policy",ask_cancellation
-
-"Hello",greeting
-"Hi there",greeting
-"Good morning",greeting
-"Good evening",greeting
-"Hey",greeting
-"Hi",greeting
-"Hello hotel",greeting
-"Greetings",greeting
-"Hey there",greeting
-"Good day",greeting
-
-"Bye",goodbye
-"Goodbye",goodbye
-"See you",goodbye
+Hello,greeting
+Hi,greeting
+Hey,greeting
+Good morning,greeting
+Good afternoon,greeting
+Good evening,greeting
+Hi there,greeting
+Greetings,greeting
+Hello bot,greeting
+Are you there?,greeting
+Is anyone online?,greeting
+Hello hotel,greeting
+Hi help,greeting
+Start chat,greeting
+Yo,greeting
+Hiya,greeting
+Hola,greeting
+Anyone home?,greeting
+Good day,greeting
+Hello friend,greeting
+Hi reception,greeting
+Greeting,greeting
+Hello support,greeting
+Hey there,greeting
+Just saying hi,greeting
+Am I speaking to a human?,greeting
+Hi!,greeting
+Hello!,greeting
+Hey!,greeting
+Good morning!,greeting
+Hi there!,greeting
+"Hello, how are you?",greeting
+"Hey, how is it going?",greeting
+"Hi, are you a bot?",greeting
+"Hello, I have a question",greeting
+"Hey, quick question",greeting
+"Hi, are you open?",greeting
+Hello from me,greeting
+Hi hi,greeting
+Heya,greeting
+Hellooooo,greeting
+Is anybody there?,greeting
+Knock knock,greeting
+Hello system,greeting
+Hi computer,greeting
+Greetings to you,greeting
+Salutations,greeting
+Hi team,greeting
+Hello staff,greeting
+Hey bot,greeting
+Good day to you,greeting
+Greetings bot,greeting
+Hi there friend,greeting
+Hello nice to meet you,greeting
+Hey how are you,greeting
+Hi assistant,greeting
+Hello there,greeting
+Just saying hello,greeting
+Hi I am new here,greeting
+Hello can we chat?,greeting
+Hi start,greeting
+Hey I need help,greeting
+Good morning to you,greeting
+Good afternoon there,greeting
+Good evening friend,greeting
+Hi chat,greeting
+Hello application,greeting
+Hey system,greeting
+Greetings from me,greeting
+Hi robot,greeting
+Hello virtual agent,greeting
+Hey nice day,greeting
+Hi nice to see you,greeting
+Hello are you active?,greeting
+Hi is this the bot?,greeting
+Greetings support team,greeting
+Hello concierge,greeting
+Hey help desk,greeting
+Hi front desk,greeting
+Hello reception,greeting
+Hey can you assist?,greeting
+Hi I have a query,greeting
+Hello question here,greeting
+Hey quick one,greeting
+Hi looking for info,greeting
+Hello info please,greeting
+Hey service,greeting
+Hi hotel bot,greeting
+Hello guest services,greeting
+Hey there bot,greeting
+Hi good day,greeting
+Hello morning,greeting
+Hey afternoon,greeting
+Hi evening,greeting
+Hello night,greeting
+Hey there system,greeting
+Hi computer agent,greeting
+Hello digital assistant,greeting
+Hey auto reply,greeting
+Hi message,greeting
+Bye,goodbye
+Goodbye,goodbye
+See you,goodbye
+See ya,goodbye
+Later,goodbye
+Talk to you later,goodbye
+Have a good day,goodbye
+Goodnight,goodbye
+Bye bye,goodbye
+Ending chat,goodbye
+I'm leaving,goodbye
 "Thanks, bye",goodbye
-"Talk to you later",goodbye
-"I'm leaving now",goodbye
-"Ok bye",goodbye
-"Thanks goodbye",goodbye
-"Have a good day",goodbye
-"See you soon",goodbye
+Catch you later,goodbye
+Closing this,goodbye
+Done,goodbye
+Thx bye,goodbye
+See you later,goodbye
+Have a nice day,goodbye
+Bye for now,goodbye
+I have to go,goodbye
+Gotta go,goodbye
+Leaving now,goodbye
+End session,goodbye
+Quit,goodbye
+Exit,goodbye
+Stop chat,goodbye
+"No more questions, bye",goodbye
+"Thank you, goodbye",goodbye
+See you soon,goodbye
+Peace out,goodbye
+Farewell,goodbye
+Cheerio,goodbye
+I am done,goodbye
+Finished,goodbye
+Signing off,goodbye
+Good bye,goodbye
+Bye bot,goodbye
+"Thanks for your help, bye",goodbye
+Okay bye,goodbye
+Till next time,goodbye
+Adios,goodbye
+Ciao,goodbye
+Have a great night,goodbye
+See you tomorrow,goodbye
+Bye now,goodbye
+"Okay, see you",goodbye
+"Thanks, see ya",goodbye
+"That's all, bye",goodbye
+I'm done here,goodbye
+Farewell,goodbye
+I am leaving now,goodbye
+Closing chat,goodbye
+End conversation,goodbye
+Stop talking,goodbye
+Quit session,goodbye
+Exit chat,goodbye
+I'm going now,goodbye
+Talk later,goodbye
+Speak soon,goodbye
+Until next time,goodbye
+Bye for today,goodbye
+Good bye friend,goodbye
+Leaving the chat,goodbye
+Signing out,goodbye
+Logging off,goodbye
+Shutting down,goodbye
+Go to sleep,goodbye
+Thanks and bye,goodbye
+Okay goodbye,goodbye
+Bye see ya,goodbye
+Later gator,goodbye
+Have a good one,goodbye
+Nice chatting bye,goodbye
+Ending this now,goodbye
+Terminate chat,goodbye
+Finish,goodbye
+Complete session,goodbye
+No more info needed,goodbye
+That is all bye,goodbye
+All done bye,goodbye
+Leaving now thanks,goodbye
+Going offline,goodbye
+Bye take care,goodbye
+Goodbye have fun,goodbye
+See you around,goodbye
+Catch you on the flip side,goodbye
+Time to go,goodbye
+Must dash,goodbye
+Heading out,goodbye
+Departure,goodbye
+Vacating chat,goodbye
+Disconnecting,goodbye
+Bye assistant,goodbye
+Goodbye system,goodbye
+End,goodbye
+Stop,goodbye
+Halt,goodbye
+Finish chat,goodbye
+Done here,goodbye
+How much is a room?,ask_room_price
+What are the rates?,ask_room_price
+Price per night?,ask_room_price
+Cost of a single room?,ask_room_price
+How much for a double room?,ask_room_price
+Do you have a price list?,ask_room_price
+What is the cost for 2 nights?,ask_room_price
+Tell me the room prices,ask_room_price
+Is it expensive?,ask_room_price
+How much is the suite?,ask_room_price
+Room rates please,ask_room_price
+What's the damage for one night?,ask_room_price
+Pricing details?,ask_room_price
+How much do you charge?,ask_room_price
+Rate for tonight?,ask_room_price
+Price for a standard room,ask_room_price
+Cost of deluxe room,ask_room_price
+Family room price,ask_room_price
+How much is it to stay?,ask_room_price
+Quote me a price,ask_room_price
+Rates for next week,ask_room_price
+How much for a weekend stay?,ask_room_price
+Price check,ask_room_price
+What is the cheapest room?,ask_room_price
+Most expensive room price?,ask_room_price
+How much is the penthouse?,ask_room_price
+Do prices change on weekends?,ask_room_price
+Rates for December,ask_room_price
+Cost for a couple?,ask_room_price
+Price for 1 person,ask_room_price
+Room cost per night,ask_room_price
+Daily rate,ask_room_price
+Weekly rate,ask_room_price
+How much is a bed?,ask_room_price
+Price for 3 adults,ask_room_price
+What are your charges?,ask_room_price
+Room tariff,ask_room_price
+Accommodation price,ask_room_price
+How much to sleep there?,ask_room_price
+Rate per person,ask_room_price
+Total cost for 2 nights,ask_room_price
+How much including tax?,ask_room_price
+Net price per room,ask_room_price
+Best price available,ask_room_price
+Discounted rates?,ask_room_price
+Standard room cost,ask_room_price
+Deluxe suite price,ask_room_price
+How much for the view room?,ask_room_price
+Price for room with balcony,ask_room_price
+Rates please,ask_room_price
+What is the cost?,ask_room_price
+Tell me the charges,ask_room_price
+What are the daily rates?,ask_room_price
+How much for a stay?,ask_room_price
+Cost of accommodation?,ask_room_price
+Room tariffs?,ask_room_price
+Price tag for a room?,ask_room_price
+What is the fee per night?,ask_room_price
+How much to book?,ask_room_price
+Rate card please,ask_room_price
+Pricing for tonight?,ask_room_price
+How much does it cost?,ask_room_price
+What is the bill for one night?,ask_room_price
+Do you have room deals?,ask_room_price
+Cost for lodging?,ask_room_price
+Overnight rates?,ask_room_price
+Price for family stay,ask_room_price
+Suite charges?,ask_room_price
+Standard room fee?,ask_room_price
+Deluxe rate?,ask_room_price
+How much do I pay?,ask_room_price
+Payment for a room?,ask_room_price
+Daily room charge?,ask_room_price
+What's the asking price?,ask_room_price
+Room quotation?,ask_room_price
+Give me a quote,ask_room_price
+Estimate price,ask_room_price
+How pricey is it?,ask_room_price
+Is it affordable?,ask_room_price
+Rates for a week?,ask_room_price
+Month stay price?,ask_room_price
+Weekend rates?,ask_room_price
+Holiday pricing?,ask_room_price
+Rates for 2 adults,ask_room_price
+Cost for 1 guest,ask_room_price
+Single occupancy rate,ask_room_price
+Double occupancy price,ask_room_price
+Triple room cost,ask_room_price
+Pricing structure?,ask_room_price
+Room fees?,ask_room_price
+How much cash for a room?,ask_room_price
+Charge for a bed?,ask_room_price
+Staying cost?,ask_room_price
+Lodging price?,ask_room_price
+Accomodation fee?,ask_room_price
+Price info?,ask_room_price
+Rate info?,ask_room_price
+Cost details?,ask_room_price
+Money for room?,ask_room_price
+How many ringgit per night?,ask_room_price
+Do you have rooms?,ask_availability
+Is there availability?,ask_availability
+Any rooms left?,ask_availability
+Can I book for tonight?,ask_availability
+Are you full?,ask_availability
+Do you have space?,ask_availability
+Any vacancies?,ask_availability
+Is the hotel booked out?,ask_availability
+Check availability,ask_availability
+I need a room,ask_availability
+Do you have a room for tomorrow?,ask_availability
+Availability for Friday,ask_availability
+Are there any free rooms?,ask_availability
+Can I stay tonight?,ask_availability
+Is there a room for 2?,ask_availability
+Check dates for me,ask_availability
+Do you have open rooms?,ask_availability
+Is the suite available?,ask_availability
+Any single rooms left?,ask_availability
+Room available now?,ask_availability
+Looking for a room,ask_availability
+Is it fully booked?,ask_availability
+Do you have availability for next week?,ask_availability
+Can I reserve a room for tonight?,ask_availability
+Are there spare rooms?,ask_availability
+Status of rooms,ask_availability
+Is the presidential suite free?,ask_availability
+Do you have a bed for me?,ask_availability
+Any empty rooms?,ask_availability
+I want to check if you have space,ask_availability
+Room availability check,ask_availability
+Are you sold out?,ask_availability
+Do you have availability for 3 nights?,ask_availability
+Can check in today?,ask_availability
+Any rooms for the weekend?,ask_availability
+Is there room for a family?,ask_availability
+Do you have a double room available?,ask_availability
+Availability status,ask_availability
+Can I get a room now?,ask_availability
+Do you have 2 rooms available?,ask_availability
+Check room status,ask_availability
+Is there availability in June?,ask_availability
+Are rooms open?,ask_availability
+Do you have space for a group?,ask_availability
+Any cancellations?,ask_availability
+Is the hotel full tonight?,ask_availability
+Check vacancy,ask_availability
+Room open?,ask_availability
+Can I come tonight?,ask_availability
+Availability please,ask_availability
+Are there vacant rooms?,ask_availability
+Is anything free?,ask_availability
+Do you have empty rooms?,ask_availability
+Any unoccupied suites?,ask_availability
+Is the hotel open?,ask_availability
+Can I get a spot?,ask_availability
+Are you booked solid?,ask_availability
+Any openings?,ask_availability
+Vacancy status?,ask_availability
+Is there space?,ask_availability
+Do you have room for me?,ask_availability
+Any free beds?,ask_availability
+Is the inn full?,ask_availability
+Can I lodge tonight?,ask_availability
+Are there vacancies?,ask_availability
+Do you have capacity?,ask_availability
+Is it crowded?,ask_availability
+Any cancellations?,ask_availability
+Room status check,ask_availability
+Can I move in?,ask_availability
+Is a room ready?,ask_availability
+Any open dates?,ask_availability
+Dates available?,ask_availability
+Is next week free?,ask_availability
+Can I reserve a slot?,ask_availability
+Is there a place to sleep?,ask_availability
+Do you have accommodation left?,ask_availability
+Any availabilities?,ask_availability
+Is it fully reserved?,ask_availability
+Are all rooms taken?,ask_availability
+Is everything booked?,ask_availability
+Any chance of a room?,ask_availability
+Do you have a spare room?,ask_availability
+Extra room available?,ask_availability
+Can you fit me in?,ask_availability
+Is Friday open?,ask_availability
+Is Saturday free?,ask_availability
+Sunday availability?,ask_availability
+Weekend vacancy?,ask_availability
+Weekday opening?,ask_availability
+Room for 2 available?,ask_availability
+Family space open?,ask_availability
+Single room free?,ask_availability
+Double room vacant?,ask_availability
+Suite unoccupied?,ask_availability
+Penthouse free?,ask_availability
+Check vacancy please,ask_availability
+Is there room?,ask_availability
+Space available?,ask_availability
+Open for booking?,ask_availability
+What facilities do you have?,ask_facilities
+Do you have a gym?,ask_facilities
+Is there a pool?,ask_facilities
+Do you have wifi?,ask_facilities
+What amenities are there?,ask_facilities
+Is there a safe?,ask_facilities
+Do you have a business center?,ask_facilities
+Is there internet?,ask_facilities
+Do you offer free wifi?,ask_facilities
+Is there a fitness center?,ask_facilities
+Do you have a swimming pool?,ask_facilities
+Is the pool outdoor?,ask_facilities
+Do you have air conditioning?,ask_facilities
+Is there AC?,ask_facilities
+Do rooms have a fridge?,ask_facilities
+Is there a mini-fridge?,ask_facilities
+Do you have a hair dryer?,ask_facilities
+Is there a blow dryer?,ask_facilities
+Is there a safe in the room?,ask_facilities
+Do you have a workout room?,ask_facilities
+What is in the room?,ask_facilities
+Tell me about the facilities,ask_facilities
+Hotel amenities list,ask_facilities
+Is the gym 24 hours?,ask_facilities
+Is the pool open?,ask_facilities
+Do you have internet access?,ask_facilities
+Is the wifi fast?,ask_facilities
+Do you have a cooling system?,ask_facilities
+Is there a refrigerator?,ask_facilities
+Do you provide hair dryers?,ask_facilities
+Can I swim there?,ask_facilities
+Is there a place to exercise?,ask_facilities
+Do you have a secure box?,ask_facilities
+Is there a computer room?,ask_facilities
+Do you have facilities for business?,ask_facilities
+Is there a hairdryer in the bathroom?,ask_facilities
+Do you have a safety deposit box?,ask_facilities
+Is the pool heated?,ask_facilities
+Do you have cardio machines?,ask_facilities
+Is there a freezer?,ask_facilities
+Amenities please,ask_facilities
+Facilities info,ask_facilities
+Room features?,ask_facilities
+Do you have weights?,ask_facilities
+Is there a desk?,ask_facilities
+Do you have high speed internet?,ask_facilities
+Is the AC working?,ask_facilities
+Do you have a gym on site?,ask_facilities
+Is there a pool for guests?,ask_facilities
+What services do you offer?,ask_facilities
+Do you have air con?,ask_facilities
+Is the room cooled?,ask_facilities
+Climate control available?,ask_facilities
+Is there a cooling unit?,ask_facilities
+Do you have a refrigerator?,ask_facilities
+Is there a cool box?,ask_facilities
+Fridge in room?,ask_facilities
+Minibar available?,ask_facilities
+Do you have a security box?,ask_facilities
+Is there a lockbox?,ask_facilities
+Safe for valuables?,ask_facilities
+Can I lock my things?,ask_facilities
+Is there a blow dryer?,ask_facilities
+Do you provide drying machines?,ask_facilities
+Hair styling tool?,ask_facilities
+Dryer for hair?,ask_facilities
+Is internet provided?,ask_facilities
+Do you have web access?,ask_facilities
+Is there a connection?,ask_facilities
+Wireless internet?,ask_facilities
+Broadband available?,ask_facilities
+Do you have a swimming area?,ask_facilities
+Is there a place to swim?,ask_facilities
+Outdoor water pool?,ask_facilities
+Can I do laps?,ask_facilities
+Pool access?,ask_facilities
+Do you have a workout area?,ask_facilities
+Is there a fitness studio?,ask_facilities
+Place to lift weights?,ask_facilities
+Exercise room?,ask_facilities
+Cardio equipment?,ask_facilities
+Treadmills available?,ask_facilities
+Do you have a business area?,ask_facilities
+Work station available?,ask_facilities
+Computer for guests?,ask_facilities
+Printing services?,ask_facilities
+What utilities are there?,ask_facilities
+Room amenities?,ask_facilities
+Hotel features?,ask_facilities
+Service list?,ask_facilities
+What is included?,ask_facilities
+Is the gym equipped?,ask_facilities
+Is the pool clean?,ask_facilities
+Is wifi free of charge?,ask_facilities
+Does the AC work well?,ask_facilities
+Do rooms come with a safe?,ask_facilities
+Is the fridge cold?,ask_facilities
+Can I borrow a hairdryer?,ask_facilities
+Is the internet fast?,ask_facilities
+Do you have a place to work?,ask_facilities
+Is there a fitness room?,ask_facilities
+Where are you located?,ask_location
+What is the address?,ask_location
+How do I get there?,ask_location
+Are you near the center?,ask_location
+Is it close to the airport?,ask_location
+Location please,ask_location
+Send me the map,ask_location
+Directions to hotel,ask_location
+Where is the hotel?,ask_location
+Is it near the station?,ask_location
+How far from the city?,ask_location
+What is the neighborhood?,ask_location
+Is it a safe area?,ask_location
+Closest subway station?,ask_location
+How to reach the hotel?,ask_location
+Give me your location,ask_location
+Where exactly is it?,ask_location
+Is it easy to find?,ask_location
+Landmarks nearby?,ask_location
+Address details,ask_location
+Show me on map,ask_location
+Are you downtown?,ask_location
+Is it far from the train station?,ask_location
+How many km from airport?,ask_location
+Which district is it in?,ask_location
+Street name?,ask_location
+Zip code?,ask_location
+Is it near the metro?,ask_location
+Can I walk to the center?,ask_location
+Location on google maps,ask_location
+How to get to you?,ask_location
+Is it on the main street?,ask_location
+Where is the entrance?,ask_location
+Are you close to the highway?,ask_location
+Distance to city center,ask_location
+Is it near public transport?,ask_location
+What is the nearest bus stop?,ask_location
+How long from airport?,ask_location
+Best way to get there?,ask_location
+Driving directions,ask_location
+Walking directions,ask_location
+Where is it situated?,ask_location
+Position of the hotel,ask_location
+Map coordinates,ask_location
+Is it central?,ask_location
+Where can I find you?,ask_location
+Full address please,ask_location
+Locate hotel,ask_location
+How far is the MRT?,ask_location
+Are you in KL?,ask_location
+What is your position?,ask_location
+Where are you situated?,ask_location
+Place of the hotel?,ask_location
+Map location?,ask_location
+Are you in the city?,ask_location
+Distance to town?,ask_location
+How close to the subway?,ask_location
+Is the MRT near?,ask_location
+Are you near the train?,ask_location
+Proximity to airport?,ask_location
+How to find you?,ask_location
+Navigation details?,ask_location
+GPS coordinates?,ask_location
+Street address?,ask_location
+Which road are you on?,ask_location
+Are you central?,ask_location
+Is the location good?,ask_location
+Near tourist spots?,ask_location
+Close to shopping?,ask_location
+Walking distance to food?,ask_location
+How far to walk to station?,ask_location
+Drive to airport?,ask_location
+Ride to city?,ask_location
+Is it a good area?,ask_location
+Neighborhood info?,ask_location
+What is around you?,ask_location
+Local area details?,ask_location
+Where is the building?,ask_location
+Which part of KL?,ask_location
+City center location?,ask_location
+Near Twin Towers?,ask_location
+Close to Pavilion?,ask_location
+Near Jalan Alor?,ask_location
+Is it easy to access?,ask_location
+Public transport nearby?,ask_location
+Bus stop close?,ask_location
+Taxi stand near?,ask_location
+Grab pickup point?,ask_location
+How to arrive?,ask_location
+Way to hotel?,ask_location
+Route to you?,ask_location
+Path to hotel?,ask_location
+Direction help?,ask_location
+Where on the map?,ask_location
+Show location?,ask_location
+Site address?,ask_location
+Venue location?,ask_location
+Where is the spot?,ask_location
+Locate on map,ask_location
+Position info,ask_location
+What time is check in?,ask_checkin_time
+When can I check in?,ask_checkin_time
+Check-in time?,ask_checkin_time
+Can I check in early?,ask_checkin_time
+Is early check-in possible?,ask_checkin_time
+When does check-in start?,ask_checkin_time
+Earliest check-in?,ask_checkin_time
+Do you have 24 hour check-in?,ask_checkin_time
+Can I arrive late?,ask_checkin_time
+What is the check-in policy?,ask_checkin_time
+Time for check-in,ask_checkin_time
+When is the room ready?,ask_checkin_time
+Can I check in at 10am?,ask_checkin_time
+Is check-in flexible?,ask_checkin_time
+When can I get the keys?,ask_checkin_time
+Check-in hour,ask_checkin_time
+Start time for check-in,ask_checkin_time
+Can I check in after midnight?,ask_checkin_time
+Late check-in fee?,ask_checkin_time
+How early can I check in?,ask_checkin_time
+When can I enter the room?,ask_checkin_time
+Check-in schedule,ask_checkin_time
+Official check-in time,ask_checkin_time
+Can I drop bags before check-in?,ask_checkin_time
+When is reception open for check-in?,ask_checkin_time
+Do I need to check in by a certain time?,ask_checkin_time
+Check-in deadline?,ask_checkin_time
+Is check-in at 2pm?,ask_checkin_time
+What's the earliest I can come?,ask_checkin_time
+Reception hours for check-in,ask_checkin_time
+Arrival time?,ask_checkin_time
+When should I arrive?,ask_checkin_time
+Can I check in now?,ask_checkin_time
+Is mobile check-in available?,ask_checkin_time
+Self check-in time?,ask_checkin_time
+What time does check-in open?,ask_checkin_time
+Check-in details,ask_checkin_time
+When can I access my room?,ask_checkin_time
+Key collection time,ask_checkin_time
+Check-in procedure,ask_checkin_time
+Can I check in in the morning?,ask_checkin_time
+Is check-in strict?,ask_checkin_time
+What if I arrive early?,ask_checkin_time
+Check-in from what time?,ask_checkin_time
+Can I check in at night?,ask_checkin_time
+Standard check-in time,ask_checkin_time
+When does the check-in desk close?,ask_checkin_time
+Check-in rules,ask_checkin_time
+Arrival procedure,ask_checkin_time
+Check in time please,ask_checkin_time
+At what hour is check-in?,ask_checkin_time
+When can I begin my stay?,ask_checkin_time
+Start time for arrival?,ask_checkin_time
+Can I get keys early?,ask_checkin_time
+Early arrival possible?,ask_checkin_time
+Reception open for check-in?,ask_checkin_time
+When do rooms open?,ask_checkin_time
+Check-in window?,ask_checkin_time
+Can I come in the morning?,ask_checkin_time
+Is noon check-in allowed?,ask_checkin_time
+Afternoon check-in?,ask_checkin_time
+Evening arrival?,ask_checkin_time
+Late night entry?,ask_checkin_time
+24h reception?,ask_checkin_time
+When is the earliest entry?,ask_checkin_time
+Standard arrival time?,ask_checkin_time
+Official entry time?,ask_checkin_time
+Bag drop before check-in?,ask_checkin_time
+luggage drop early?,ask_checkin_time
+Can I wait in lobby?,ask_checkin_time
+Check-in procedure?,ask_checkin_time
+Registration time?,ask_checkin_time
+When to register?,ask_checkin_time
+Sign in time?,ask_checkin_time
+Check-in slot?,ask_checkin_time
+When can I occupy the room?,ask_checkin_time
+Room access time?,ask_checkin_time
+When is the room mine?,ask_checkin_time
+Start of stay?,ask_checkin_time
+Check-in start?,ask_checkin_time
+Begin stay time?,ask_checkin_time
+Can I check in at 3pm?,ask_checkin_time
+Is 2pm too early?,ask_checkin_time
+What if I am late?,ask_checkin_time
+Arrival deadline?,ask_checkin_time
+Check-in limit?,ask_checkin_time
+Time to get room?,ask_checkin_time
+When are keys given?,ask_checkin_time
+Front desk check-in?,ask_checkin_time
+Mobile entry?,ask_checkin_time
+Self service check-in?,ask_checkin_time
+Auto check-in?,ask_checkin_time
+Online check-in time?,ask_checkin_time
+Physical check-in?,ask_checkin_time
+Counter open time?,ask_checkin_time
+Check-in duration?,ask_checkin_time
+Quick check-in?,ask_checkin_time
+Priority check-in?,ask_checkin_time
+VIP check-in?,ask_checkin_time
+Guest arrival time?,ask_checkin_time
+What time is check out?,ask_checkout_time
+When do I have to leave?,ask_checkout_time
+Check-out time?,ask_checkout_time
+Can I check out late?,ask_checkout_time
+Is late check-out possible?,ask_checkout_time
+When does check-out end?,ask_checkout_time
+Latest check-out?,ask_checkout_time
+Do you have late check-out?,ask_checkout_time
+Can I stay until 2pm?,ask_checkout_time
+What is the check-out policy?,ask_checkout_time
+Time for check-out,ask_checkout_time
+When must I vacate the room?,ask_checkout_time
+Can I check out at 1pm?,ask_checkout_time
+Is check-out flexible?,ask_checkout_time
+When do I return the keys?,ask_checkout_time
+Check-out hour,ask_checkout_time
+End time for check-out,ask_checkout_time
+Can I check out early?,ask_checkout_time
+Late check-out fee?,ask_checkout_time
+How late can I check out?,ask_checkout_time
+When must I leave?,ask_checkout_time
+Check-out schedule,ask_checkout_time
+Official check-out time,ask_checkout_time
+Can I leave bags after check-out?,ask_checkout_time
+When is reception open for check-out?,ask_checkout_time
+Do I need to check out by a certain time?,ask_checkout_time
+Check-out deadline?,ask_checkout_time
+Is check-out at 11am?,ask_checkout_time
+What's the latest I can leave?,ask_checkout_time
+Reception hours for check-out,ask_checkout_time
+Departure time?,ask_checkout_time
+When should I depart?,ask_checkout_time
+Can I check out now?,ask_checkout_time
+Is mobile check-out available?,ask_checkout_time
+Self check-out time?,ask_checkout_time
+What time does check-out close?,ask_checkout_time
+Check-out details,ask_checkout_time
+When do I lose access to my room?,ask_checkout_time
+Key return time,ask_checkout_time
+Check-out procedure,ask_checkout_time
+Can I check out in the evening?,ask_checkout_time
+Is check-out strict?,ask_checkout_time
+What if I leave late?,ask_checkout_time
+Check-out until what time?,ask_checkout_time
+Can I check out at noon?,ask_checkout_time
+Standard check-out time,ask_checkout_time
+When does the check-out desk open?,ask_checkout_time
+Check-out rules,ask_checkout_time
+Departure procedure,ask_checkout_time
+Check out time please,ask_checkout_time
+At what hour must I leave?,ask_checkout_time
+When to vacate?,ask_checkout_time
+Departure time?,ask_checkout_time
+Can I stay late?,ask_checkout_time
+Late departure?,ask_checkout_time
+Extend stay till afternoon?,ask_checkout_time
+When do I give back keys?,ask_checkout_time
+Key return deadline?,ask_checkout_time
+Room clearance time?,ask_checkout_time
+When to exit room?,ask_checkout_time
+End of stay time?,ask_checkout_time
+Check-out deadline?,ask_checkout_time
+Must I leave by noon?,ask_checkout_time
+Is 1pm okay?,ask_checkout_time
+Can I leave at 2pm?,ask_checkout_time
+Late check-out charge?,ask_checkout_time
+Cost to stay longer?,ask_checkout_time
+Free late check-out?,ask_checkout_time
+Morning check-out?,ask_checkout_time
+Standard departure?,ask_checkout_time
+Official exit time?,ask_checkout_time
+Bag storage after check-out?,ask_checkout_time
+Leave bags later?,ask_checkout_time
+Can I wait after check-out?,ask_checkout_time
+Check-out procedure?,ask_checkout_time
+Sign out time?,ask_checkout_time
+When to sign out?,ask_checkout_time
+Bill settlement time?,ask_checkout_time
+When to pay and leave?,ask_checkout_time
+Room expiry time?,ask_checkout_time
+When does access stop?,ask_checkout_time
+Card expiry time?,ask_checkout_time
+Last hour to stay?,ask_checkout_time
+Final departure?,ask_checkout_time
+Closing time for room?,ask_checkout_time
+Can I check out at 11?,ask_checkout_time
+Is 12 the limit?,ask_checkout_time
+What if I am late leaving?,ask_checkout_time
+Departure limit?,ask_checkout_time
+Time to go?,ask_checkout_time
+When to hand over keys?,ask_checkout_time
+Front desk check-out?,ask_checkout_time
+Mobile exit?,ask_checkout_time
+Self service check-out?,ask_checkout_time
+Auto check-out?,ask_checkout_time
+Online check-out?,ask_checkout_time
+Express check-out?,ask_checkout_time
+Quick exit?,ask_checkout_time
+Priority departure?,ask_checkout_time
+Guest departure time?,ask_checkout_time
+How do I book?,ask_booking
+I want to book a room,ask_booking
+Can I make a reservation?,ask_booking
+Book now,ask_booking
+I need to reserve,ask_booking
+Booking process,ask_booking
+How to reserve?,ask_booking
+Where can I book?,ask_booking
+I'd like to book,ask_booking
+Can you book for me?,ask_booking
+Reserve a room,ask_booking
+Make a booking,ask_booking
+I want to stay,ask_booking
+Book a night,ask_booking
+Reservation please,ask_booking
+How do I secure a room?,ask_booking
+I want to make a booking,ask_booking
+Can I book online?,ask_booking
+Do I need to call to book?,ask_booking
+Booking inquiry,ask_booking
+Reserve for tomorrow,ask_booking
+Book for next week,ask_booking
+I want to order a room,ask_booking
+Can I book via chat?,ask_booking
+Help me book,ask_booking
+Start reservation,ask_booking
+I want to confirm a booking,ask_booking
+Booking steps,ask_booking
+Can I reserve a suite?,ask_booking
+I want to book a double room,ask_booking
+How to proceed with booking?,ask_booking
+Can I book for 2 people?,ask_booking
+I want to book for tonight,ask_booking
+Please reserve a room,ask_booking
+Book for me,ask_booking
+I am looking to book,ask_booking
+How to confirm reservation?,ask_booking
+Can I pay and book?,ask_booking
+I want to secure my stay,ask_booking
+Reserve my spot,ask_booking
+Booking help,ask_booking
+I want to check in and book,ask_booking
+Can I book a room please?,ask_booking
+Let's book,ask_booking
+I need a reservation,ask_booking
+Reserve accommodation,ask_booking
+Booking assistance,ask_booking
+Make a res,ask_booking
+I want to get a room,ask_booking
+Book it,ask_booking
+How to secure a room?,ask_booking
+Make a reservation,ask_booking
+Schedule a stay,ask_booking
+Can I reserve?,ask_booking
+Reservation process?,ask_booking
+Way to book?,ask_booking
+Where to reserve?,ask_booking
+I need a spot,ask_booking
+Can you hold a room?,ask_booking
+Hold a suite?,ask_booking
+Booking method?,ask_booking
+Reservation instructions?,ask_booking
+How to get a room?,ask_booking
+Can I order a room?,ask_booking
+Room ordering?,ask_booking
+Place a booking,ask_booking
+Confirm a stay,ask_booking
+Lock in a price,ask_booking
+Reserve for me,ask_booking
+Book for a friend,ask_booking
+Reservation inquiry,ask_booking
+Booking request,ask_booking
+I want to lodge,ask_booking
+Arranging a stay,ask_booking
+Plan a visit,ask_booking
+Book online?,ask_booking
+Reserve via phone?,ask_booking
+Walk-in booking?,ask_booking
+Manual reservation?,ask_booking
+Can I book in person?,ask_booking
+Book at counter?,ask_booking
+Reserve at reception?,ask_booking
+Booking desk?,ask_booking
+Reservation department?,ask_booking
+Call to reserve?,ask_booking
+Website booking?,ask_booking
+App booking?,ask_booking
+How to pay and book?,ask_booking
+Secure my dates,ask_booking
+Block a room,ask_booking
+Reserve for tonight,ask_booking
+Book for tomorrow,ask_booking
+Reservation help,ask_booking
+Assist with booking,ask_booking
+Guide to reserve,ask_booking
+Booking step by step,ask_booking
+Start booking process,ask_booking
+Initiate reservation,ask_booking
+Create booking,ask_booking
+New reservation,ask_booking
+How do I cancel?,ask_cancellation
+Cancellation policy?,ask_cancellation
+Can I get a refund?,ask_cancellation
+Is cancellation free?,ask_cancellation
+I want to cancel,ask_cancellation
+Cancel my booking,ask_cancellation
+Cancel reservation,ask_cancellation
+What if I cancel?,ask_cancellation
+Is there a cancellation fee?,ask_cancellation
+Can I annul the booking?,ask_cancellation
+Refund policy,ask_cancellation
+How much is the cancellation charge?,ask_cancellation
+Can I cancel last minute?,ask_cancellation
+I need to cancel my room,ask_cancellation
+Cancel my stay,ask_cancellation
+How to revoke booking?,ask_cancellation
+Is it non-refundable?,ask_cancellation
+Free cancellation?,ask_cancellation
+What are the cancellation rules?,ask_cancellation
+Can I change my mind?,ask_cancellation
+"I can't come, cancel",ask_cancellation
+Please cancel my order,ask_cancellation
+I want my money back,ask_cancellation
+Do I get a refund?,ask_cancellation
+Cancellation terms,ask_cancellation
+Deadline for cancellation?,ask_cancellation
+Can I cancel 24h before?,ask_cancellation
+Is the deposit refundable?,ask_cancellation
+How to void reservation?,ask_cancellation
+Cancel for me,ask_cancellation
+"I made a mistake, cancel",ask_cancellation
+Withdraw booking,ask_cancellation
+Can I cancel without penalty?,ask_cancellation
+What is the penalty for cancelling?,ask_cancellation
+Return my payment,ask_cancellation
+Cancellation conditions,ask_cancellation
+I need to drop my reservation,ask_cancellation
+Can I cancel online?,ask_cancellation
+Cancel booking number,ask_cancellation
+Undo booking,ask_cancellation
+Rescind reservation,ask_cancellation
+Refund rules,ask_cancellation
+Is it too late to cancel?,ask_cancellation
+Charge for cancellation,ask_cancellation
+Can I cancel for free?,ask_cancellation
+Cancellation inquiry,ask_cancellation
+Abort booking,ask_cancellation
+Stop reservation,ask_cancellation
+Terminate stay,ask_cancellation
+Cancellation details,ask_cancellation
+How to revoke?,ask_cancellation
+Revoke booking?,ask_cancellation
+Annul reservation?,ask_cancellation
+Void my stay?,ask_cancellation
+Terminate booking?,ask_cancellation
+Can I back out?,ask_cancellation
+Change of plans?,ask_cancellation
+Refund rules?,ask_cancellation
+Money back guarantee?,ask_cancellation
+Is it refundable?,ask_cancellation
+Non-refundable?,ask_cancellation
+Cancellation fee?,ask_cancellation
+Penalty for cancelling?,ask_cancellation
+Charge for stopping?,ask_cancellation
+Can I quit the booking?,ask_cancellation
+Stop the reservation?,ask_cancellation
+End the booking?,ask_cancellation
+Delete reservation?,ask_cancellation
+Remove booking?,ask_cancellation
+Clear my schedule?,ask_cancellation
+I cannot make it,ask_cancellation
+Plans changed,ask_cancellation
+Need to cancel,ask_cancellation
+Want to cancel,ask_cancellation
+Request refund,ask_cancellation
+Return deposit?,ask_cancellation
+Get money back?,ask_cancellation
+Cancellation window?,ask_cancellation
+Time to cancel?,ask_cancellation
+Last day to cancel?,ask_cancellation
+24h rule?,ask_cancellation
+Free cancellation policy?,ask_cancellation
+Is it free to cancel?,ask_cancellation
+No charge cancellation?,ask_cancellation
+Waive fee?,ask_cancellation
+Cancellation instructions?,ask_cancellation
+Way to cancel?,ask_cancellation
+Where to cancel?,ask_cancellation
+Cancel online?,ask_cancellation
+Cancel by phone?,ask_cancellation
+Call to cancel?,ask_cancellation
+Email cancellation?,ask_cancellation
+Cancel logic?,ask_cancellation
+Booking withdrawal?,ask_cancellation
+Withdraw request?,ask_cancellation
+Retract booking?,ask_cancellation
+Rescind offer?,ask_cancellation
+Drop the room?,ask_cancellation
+Let go of room?,ask_cancellation
+Cancel stay,ask_cancellation
+I want to talk to a human,ask_contact_support
+Customer support,ask_contact_support
+Help please,ask_contact_support
+Can I speak to an agent?,ask_contact_support
+Connect me to staff,ask_contact_support
+Where is the manager?,ask_contact_support
+I need real help,ask_contact_support
+Human agent,ask_contact_support
+Talk to someone,ask_contact_support
+Call support,ask_contact_support
+Customer service,ask_contact_support
+Is there a real person?,ask_contact_support
+I have a complaint,ask_contact_support
+Support team,ask_contact_support
+Contact info,ask_contact_support
+Phone number?,ask_contact_support
+Email address?,ask_contact_support
+How to contact you?,ask_contact_support
+I need assistance,ask_contact_support
+Operator,ask_contact_support
+Live chat,ask_contact_support
+Representative,ask_contact_support
+Speak to support,ask_contact_support
+I want to call,ask_contact_support
+Give me the number,ask_contact_support
+Where is the reception desk?,ask_contact_support
+I want to speak to the owner,ask_contact_support
+Who can I talk to?,ask_contact_support
+I need manual help,ask_contact_support
+Bot is not helping,ask_contact_support
+Switch to human,ask_contact_support
+Real person please,ask_contact_support
+Agent please,ask_contact_support
+Support line,ask_contact_support
+Help desk,ask_contact_support
+I have an issue,ask_contact_support
+Report a problem,ask_contact_support
+Talk to receptionist,ask_contact_support
+Connect to operator,ask_contact_support
+I need to discuss something,ask_contact_support
+Can you call me?,ask_contact_support
+Urgent help,ask_contact_support
+Emergency contact,ask_contact_support
+Who is in charge?,ask_contact_support
+Staff member,ask_contact_support
+I need better answers,ask_contact_support
+Contact details,ask_contact_support
+Support please,ask_contact_support
+Human help,ask_contact_support
+Talk to person,ask_contact_support
+I need assistance,ask_contact_support
+Talk to staff,ask_contact_support
+Speak to personnel,ask_contact_support
+Connect to help,ask_contact_support
+Where is aid?,ask_contact_support
+I need a person,ask_contact_support
+Manual support,ask_contact_support
+Human help,ask_contact_support
+Real agent,ask_contact_support
+Live person,ask_contact_support
+Call someone,ask_contact_support
+Phone support,ask_contact_support
+Dial number,ask_contact_support
+Email help,ask_contact_support
+Contact details?,ask_contact_support
+Reach out to support,ask_contact_support
+Get in touch,ask_contact_support
+Customer care,ask_contact_support
+Service desk,ask_contact_support
+Front office,ask_contact_support
+Reception contact,ask_contact_support
+Manager contact,ask_contact_support
+Supervisor?,ask_contact_support
+Complaint dept,ask_contact_support
+Report issue,ask_contact_support
+Technical help,ask_contact_support
+Bot is stuck,ask_contact_support
+Need human,ask_contact_support
+Bypass bot,ask_contact_support
+Talk to operator,ask_contact_support
+Operator please,ask_contact_support
+Admin?,ask_contact_support
+Staff member?,ask_contact_support
+Employee?,ask_contact_support
+Who works here?,ask_contact_support
+Can someone call?,ask_contact_support
+Request call back,ask_contact_support
+Chat with person,ask_contact_support
+Live chat agent,ask_contact_support
+Support ticket,ask_contact_support
+Open a case,ask_contact_support
+Help me please,ask_contact_support
+Assist me,ask_contact_support
+Guidance needed,ask_contact_support
+Question for staff,ask_contact_support
+Inquiry for human,ask_contact_support
+Real answers,ask_contact_support
+Not a bot,ask_contact_support
+Human interaction,ask_contact_support
+Talk to someone real,ask_contact_support
+How can I pay?,ask_payment_methods
+Do you accept cash?,ask_payment_methods
+Can I pay with credit card?,ask_payment_methods
+Do you take Visa?,ask_payment_methods
+Is Mastercard accepted?,ask_payment_methods
+Do you take Amex?,ask_payment_methods
+Can I pay with PayPal?,ask_payment_methods
+Do you accept Bitcoin?,ask_payment_methods
+Is Apple Pay available?,ask_payment_methods
+Google Pay accepted?,ask_payment_methods
+Can I pay on arrival?,ask_payment_methods
+Do I need to pay now?,ask_payment_methods
+Payment methods?,ask_payment_methods
+What cards do you take?,ask_payment_methods
+Is a deposit required?,ask_payment_methods
+Can I pay by transfer?,ask_payment_methods
+Do you accept checks?,ask_payment_methods
+Is payment secure?,ask_payment_methods
+How do I pay?,ask_payment_methods
+Payment options,ask_payment_methods
+Can I pay later?,ask_payment_methods
+Do you take debit cards?,ask_payment_methods
+Is cash allowed?,ask_payment_methods
+Can I split the bill?,ask_payment_methods
+Do you accept foreign currency?,ask_payment_methods
+Currency accepted?,ask_payment_methods
+Payment terms,ask_payment_methods
+When do I pay?,ask_payment_methods
+Do I pay at check-in?,ask_payment_methods
+Do I pay at check-out?,ask_payment_methods
+Is prepayment needed?,ask_payment_methods
+Can I pay with points?,ask_payment_methods
+Do you take UnionPay?,ask_payment_methods
+Is JCB accepted?,ask_payment_methods
+Payment policy,ask_payment_methods
+How to settle the bill?,ask_payment_methods
+Can someone else pay?,ask_payment_methods
+Corporate card accepted?,ask_payment_methods
+Do you send an invoice?,ask_payment_methods
+Receipt needed,ask_payment_methods
+Can I pay in installments?,ask_payment_methods
+Is there a surcharge for credit cards?,ask_payment_methods
+Cash only?,ask_payment_methods
+Card only?,ask_payment_methods
+Payment details,ask_payment_methods
+How to make payment?,ask_payment_methods
+Billing options,ask_payment_methods
+Preferred payment method?,ask_payment_methods
+Pay at hotel?,ask_payment_methods
+Online payment?,ask_payment_methods
+Way to settle bill?,ask_payment_methods
+Settlement options?,ask_payment_methods
+Billing choices?,ask_payment_methods
+Transaction methods?,ask_payment_methods
+Do you take plastic?,ask_payment_methods
+Card payment?,ask_payment_methods
+Cash payment?,ask_payment_methods
+Ringgit accepted?,ask_payment_methods
+MYR accepted?,ask_payment_methods
+Foreign money?,ask_payment_methods
+Exchange currency?,ask_payment_methods
+Credit card fee?,ask_payment_methods
+Debit card ok?,ask_payment_methods
+Visa accepted?,ask_payment_methods
+Mastercard ok?,ask_payment_methods
+Amex taken?,ask_payment_methods
+E-wallet?,ask_payment_methods
+Digital pay?,ask_payment_methods
+Touch n Go?,ask_payment_methods
+GrabPay?,ask_payment_methods
+Alipay?,ask_payment_methods
+WeChat Pay?,ask_payment_methods
+Online transfer?,ask_payment_methods
+Bank transfer?,ask_payment_methods
+FPX payment?,ask_payment_methods
+Direct debit?,ask_payment_methods
+Pay later?,ask_payment_methods
+Installment plan?,ask_payment_methods
+Deposit needed?,ask_payment_methods
+Security bond?,ask_payment_methods
+Upfront payment?,ask_payment_methods
+Pay at desk?,ask_payment_methods
+Pay in advance?,ask_payment_methods
+Pre-payment?,ask_payment_methods
+Pay on exit?,ask_payment_methods
+Split payment?,ask_payment_methods
+Share bill?,ask_payment_methods
+Invoice payment?,ask_payment_methods
+Corporate account?,ask_payment_methods
+Company bill?,ask_payment_methods
+Receipt provided?,ask_payment_methods
+Tax invoice?,ask_payment_methods
+Service charge?,ask_payment_methods
+Hidden fees?,ask_payment_methods
+Payment secure?,ask_payment_methods
+Safe transaction?,ask_payment_methods
+Card reader?,ask_payment_methods
+Contactless pay?,ask_payment_methods
+Apple Pay ok?,ask_payment_methods
+Google Wallet?,ask_payment_methods
+Are pets allowed?,ask_pet_policy
+Can I bring my dog?,ask_pet_policy
+Do you accept cats?,ask_pet_policy
+Is it pet friendly?,ask_pet_policy
+Pet policy?,ask_pet_policy
+Can my puppy come?,ask_pet_policy
+Are animals allowed?,ask_pet_policy
+Do you have pet rooms?,ask_pet_policy
+Is there a pet fee?,ask_pet_policy
+How much for a dog?,ask_pet_policy
+Can I bring a pet?,ask_pet_policy
+Are service animals allowed?,ask_pet_policy
+Dog friendly?,ask_pet_policy
+Cat friendly?,ask_pet_policy
+Pet restrictions?,ask_pet_policy
+Max pet weight?,ask_pet_policy
+Can I leave my dog in the room?,ask_pet_policy
+Do you provide pet beds?,ask_pet_policy
+Is the hotel dog friendly?,ask_pet_policy
+Can I bring my bird?,ask_pet_policy
+Pets welcome?,ask_pet_policy
+Animal policy,ask_pet_policy
+Do you allow pets?,ask_pet_policy
+I have a dog,ask_pet_policy
+I have a cat,ask_pet_policy
+Traveling with pets,ask_pet_policy
+Pet deposit?,ask_pet_policy
+Rules for pets,ask_pet_policy
+Are large dogs allowed?,ask_pet_policy
+Small pets only?,ask_pet_policy
+How many pets per room?,ask_pet_policy
+Is there a dog park nearby?,ask_pet_policy
+Pet amenities?,ask_pet_policy
+Can pets stay for free?,ask_pet_policy
+Charge for pets,ask_pet_policy
+Do I need to book for my pet?,ask_pet_policy
+Pet friendly rooms,ask_pet_policy
+Can I bring my hamster?,ask_pet_policy
+Are exotic pets allowed?,ask_pet_policy
+Pet friendly hotel?,ask_pet_policy
+I want to bring my dog,ask_pet_policy
+Is the garden pet friendly?,ask_pet_policy
+Leash rules?,ask_pet_policy
+Do you have a kennel?,ask_pet_policy
+Pet sitting?,ask_pet_policy
+Dog walking service?,ask_pet_policy
+Pet sanitation fee?,ask_pet_policy
+Can I bring my emotional support animal?,ask_pet_policy
+Pet access areas?,ask_pet_policy
+Pets permitted?,ask_pet_policy
+Animal rules?,ask_pet_policy
+Can animals stay?,ask_pet_policy
+Dog allowed?,ask_pet_policy
+Cat allowed?,ask_pet_policy
+Puppy allowed?,ask_pet_policy
+Kitten allowed?,ask_pet_policy
+Furry friends?,ask_pet_policy
+Four legged guests?,ask_pet_policy
+Pet friendly?,ask_pet_policy
+Animal friendly?,ask_pet_policy
+Bring my dog?,ask_pet_policy
+Bring my cat?,ask_pet_policy
+Pet charge?,ask_pet_policy
+Animal fee?,ask_pet_policy
+Cost for pet?,ask_pet_policy
+Dog cleaning fee?,ask_pet_policy
+Cat deposit?,ask_pet_policy
+Pet restriction?,ask_pet_policy
+Weight limit for dog?,ask_pet_policy
+Size limit for pet?,ask_pet_policy
+Large dogs?,ask_pet_policy
+Small dogs only?,ask_pet_policy
+Service dog?,ask_pet_policy
+Guide dog?,ask_pet_policy
+Assistance animal?,ask_pet_policy
+Pet in room?,ask_pet_policy
+Pet in bed?,ask_pet_policy
+Dog walking?,ask_pet_policy
+Pet food?,ask_pet_policy
+Pet bowl?,ask_pet_policy
+Pet bed provided?,ask_pet_policy
+Can dog stay alone?,ask_pet_policy
+Pet rules in lobby?,ask_pet_policy
+Pet rules in pool?,ask_pet_policy
+Pet rules in restaurant?,ask_pet_policy
+Where can pets go?,ask_pet_policy
+Pet zones?,ask_pet_policy
+Non-pet rooms?,ask_pet_policy
+Allergy free?,ask_pet_policy
+I have a pet,ask_pet_policy
+Traveling with dog,ask_pet_policy
+With my cat,ask_pet_policy
+Pet vaccination?,ask_pet_policy
+Pet passport?,ask_pet_policy
+Bird allowed?,ask_pet_policy
+Hamster allowed?,ask_pet_policy
+Exotic animal?,ask_pet_policy
+Pet policy details?,ask_pet_policy
+Can I book with pet?,ask_pet_policy
+Pet reservation?,ask_pet_policy
+Can I smoke?,ask_smoking_policy
+Is smoking allowed?,ask_smoking_policy
+Do you have smoking rooms?,ask_smoking_policy
+Is it non-smoking?,ask_smoking_policy
+Smoking policy?,ask_smoking_policy
+Where can I smoke?,ask_smoking_policy
+Is there a smoking area?,ask_smoking_policy
+Can I smoke on the balcony?,ask_smoking_policy
+Vaping allowed?,ask_smoking_policy
+E-cigarettes allowed?,ask_smoking_policy
+Fine for smoking?,ask_smoking_policy
+Is the hotel smoke free?,ask_smoking_policy
+Designated smoking zone?,ask_smoking_policy
+Can I smoke in the lobby?,ask_smoking_policy
+Cigars allowed?,ask_smoking_policy
+Is cannabis allowed?,ask_smoking_policy
+Smoking rules,ask_smoking_policy
+Do you sell cigarettes?,ask_smoking_policy
+Smokers area,ask_smoking_policy
+I need a smoking room,ask_smoking_policy
+I need a non-smoking room,ask_smoking_policy
+Is the whole hotel non-smoking?,ask_smoking_policy
+Can I smoke outside?,ask_smoking_policy
+Where is the ashtray?,ask_smoking_policy
+Smoking ban?,ask_smoking_policy
+Penalty for smoking?,ask_smoking_policy
+Can I smoke in the bathroom?,ask_smoking_policy
+Is shisha allowed?,ask_smoking_policy
+Smoking lounge?,ask_smoking_policy
+Do you have a cigar bar?,ask_smoking_policy
+Can I smoke at the pool?,ask_smoking_policy
+Is vaping permitted?,ask_smoking_policy
+Smoke free property?,ask_smoking_policy
+Can I smoke on the terrace?,ask_smoking_policy
+Are there fines for smoking?,ask_smoking_policy
+Strictly non-smoking?,ask_smoking_policy
+Smoking permitted?,ask_smoking_policy
+Where to smoke?,ask_smoking_policy
+Is the room smoking?,ask_smoking_policy
+Can I smoke near the entrance?,ask_smoking_policy
+Outdoor smoking area,ask_smoking_policy
+Indoor smoking?,ask_smoking_policy
+Electronic cigarettes?,ask_smoking_policy
+Is the restaurant non-smoking?,ask_smoking_policy
+Smoking laws,ask_smoking_policy
+Can I smoke window open?,ask_smoking_policy
+Does the room smell of smoke?,ask_smoking_policy
+Smoke detector?,ask_smoking_policy
+Smoking booth?,ask_smoking_policy
+Tobacco policy?,ask_smoking_policy
+Cigarette rules?,ask_smoking_policy
+Tobacco policy?,ask_smoking_policy
+Can I light up?,ask_smoking_policy
+Vaping rules?,ask_smoking_policy
+E-cig rules?,ask_smoking_policy
+Use tobacco?,ask_smoking_policy
+Smoke signal?,ask_smoking_policy
+Designated area?,ask_smoking_policy
+Smoking spot?,ask_smoking_policy
+Where to puff?,ask_smoking_policy
+Ashtray location?,ask_smoking_policy
+Lobby smoking?,ask_smoking_policy
+Room smoking?,ask_smoking_policy
+Balcony smoking?,ask_smoking_policy
+Terrace smoking?,ask_smoking_policy
+Garden smoking?,ask_smoking_policy
+Pool smoking?,ask_smoking_policy
+Bar smoking?,ask_smoking_policy
+Restaurant smoking?,ask_smoking_policy
+Non-smoking hotel?,ask_smoking_policy
+Smoke free?,ask_smoking_policy
+Clean air policy?,ask_smoking_policy
+Fine for lighting up?,ask_smoking_policy
+Penalty fee?,ask_smoking_policy
+Cost if I smoke?,ask_smoking_policy
+Cleaning charge?,ask_smoking_policy
+Smell of smoke?,ask_smoking_policy
+Cannabis rules?,ask_smoking_policy
+Weed policy?,ask_smoking_policy
+Vape pen?,ask_smoking_policy
+Electronic smoke?,ask_smoking_policy
+Cigar lounge?,ask_smoking_policy
+Pipe smoking?,ask_smoking_policy
+Shisha?,ask_smoking_policy
+Hookah?,ask_smoking_policy
+Is it allowed to smoke?,ask_smoking_policy
+Can I have a cigarette?,ask_smoking_policy
+Quick smoke?,ask_smoking_policy
+Smoking zone?,ask_smoking_policy
+Outside smoking?,ask_smoking_policy
+Entrance smoking?,ask_smoking_policy
+Smoking prohibited?,ask_smoking_policy
+No smoking sign?,ask_smoking_policy
+Strictly no smoke?,ask_smoking_policy
+Zero tolerance?,ask_smoking_policy
+Smoke alarm?,ask_smoking_policy
+Fire hazard?,ask_smoking_policy
+Smoking laws?,ask_smoking_policy
+Hotel smoking rules?,ask_smoking_policy
+Guest smoking?,ask_smoking_policy
+Can I store luggage?,ask_luggage_storage
+Luggage storage?,ask_luggage_storage
+Do you have lockers?,ask_luggage_storage
+Can I leave my bags?,ask_luggage_storage
+Bag drop?,ask_luggage_storage
+Storage for suitcases?,ask_luggage_storage
+Can I leave bags before check-in?,ask_luggage_storage
+Can I leave bags after check-out?,ask_luggage_storage
+Is luggage storage free?,ask_luggage_storage
+Where to put luggage?,ask_luggage_storage
+Do you hold bags?,ask_luggage_storage
+Keep my bag please,ask_luggage_storage
+Luggage room?,ask_luggage_storage
+Is storage secure?,ask_luggage_storage
+How long can I store bags?,ask_luggage_storage
+Overnight storage?,ask_luggage_storage
+Can I leave my backpack?,ask_luggage_storage
+Suitcase storage,ask_luggage_storage
+Cloakroom?,ask_luggage_storage
+Baggage hold,ask_luggage_storage
+Can you watch my stuff?,ask_luggage_storage
+Place for luggage,ask_luggage_storage
+Left luggage service,ask_luggage_storage
+Cost for storage?,ask_luggage_storage
+Bag keeping,ask_luggage_storage
+Can I pick up bags later?,ask_luggage_storage
+Store my gear,ask_luggage_storage
+Do you have a bellboy?,ask_luggage_storage
+Luggage assistance,ask_luggage_storage
+Can I store large items?,ask_luggage_storage
+Surfboard storage?,ask_luggage_storage
+Bike storage?,ask_luggage_storage
+Valuables storage?,ask_luggage_storage
+Safe storage?,ask_luggage_storage
+Luggage lockers,ask_luggage_storage
+Bag storage price,ask_luggage_storage
+Can I leave luggage for a week?,ask_luggage_storage
+Short term storage,ask_luggage_storage
+Long term storage,ask_luggage_storage
+Luggage deposit,ask_luggage_storage
+Bag check,ask_luggage_storage
+Coat check?,ask_luggage_storage
+Can I leave my shopping?,ask_luggage_storage
+Secure room for bags?,ask_luggage_storage
+Do you take care of luggage?,ask_luggage_storage
+Luggage policy,ask_luggage_storage
+Baggage claim,ask_luggage_storage
+Store luggage for free?,ask_luggage_storage
+Bag drop off,ask_luggage_storage
+Luggage facility,ask_luggage_storage
+Store my bags?,ask_luggage_storage
+Keep my suitcases?,ask_luggage_storage
+Hold my things?,ask_luggage_storage
+Bag locker?,ask_luggage_storage
+Suitcase room?,ask_luggage_storage
+Belongings storage?,ask_luggage_storage
+Left luggage?,ask_luggage_storage
+Cloak room?,ask_luggage_storage
+Baggage drop?,ask_luggage_storage
+Drop bags?,ask_luggage_storage
+Leave stuff?,ask_luggage_storage
+Keep for me?,ask_luggage_storage
+Watch my bags?,ask_luggage_storage
+Secure my items?,ask_luggage_storage
+Storage locker?,ask_luggage_storage
+Safe place for bags?,ask_luggage_storage
+Free storage?,ask_luggage_storage
+Cost to store?,ask_luggage_storage
+Overnight bag keep?,ask_luggage_storage
+Day storage?,ask_luggage_storage
+Early drop off?,ask_luggage_storage
+Late pick up?,ask_luggage_storage
+Store before check-in?,ask_luggage_storage
+Store after check-out?,ask_luggage_storage
+Bag service?,ask_luggage_storage
+Concierge storage?,ask_luggage_storage
+Bell hop storage?,ask_luggage_storage
+Luggage assistance?,ask_luggage_storage
+Carry my bags?,ask_luggage_storage
+Large item storage?,ask_luggage_storage
+Bike storage?,ask_luggage_storage
+Surfboard keep?,ask_luggage_storage
+Backpack storage?,ask_luggage_storage
+Handbag storage?,ask_luggage_storage
+Laptop bag?,ask_luggage_storage
+Valuable storage?,ask_luggage_storage
+Bag security?,ask_luggage_storage
+Luggage tag?,ask_luggage_storage
+Claim check?,ask_luggage_storage
+Retrieve bags?,ask_luggage_storage
+Get bags later?,ask_luggage_storage
+Pick up time?,ask_luggage_storage
+Storage hours?,ask_luggage_storage
+24h storage?,ask_luggage_storage
+Is it safe?,ask_luggage_storage
+Locked room?,ask_luggage_storage
+Camera monitored?,ask_luggage_storage
+Bag policy?,ask_luggage_storage
+Luggage help?,ask_luggage_storage
+Baggage info?,ask_luggage_storage
+Child policy?,ask_child_policy
+Kids stay free?,ask_child_policy
+Do you have cribs?,ask_child_policy
+Baby cots available?,ask_child_policy
+Is it child friendly?,ask_child_policy
+Family friendly?,ask_child_policy
+Age limit for kids?,ask_child_policy
+Extra bed for child?,ask_child_policy
+Cost for children?,ask_child_policy
+Do kids eat free?,ask_child_policy
+Babysitting service?,ask_child_policy
+Kids club?,ask_child_policy
+Do you have high chairs?,ask_child_policy
+Children allowed?,ask_child_policy
+Max age for child rate?,ask_child_policy
+Do you have family rooms?,ask_child_policy
+Baby amenities?,ask_child_policy
+Can I bring a baby?,ask_child_policy
+Is there a playground?,ask_child_policy
+Child safety?,ask_child_policy
+Strollers available?,ask_child_policy
+Baby bath?,ask_child_policy
+Kids menu?,ask_child_policy
+Do you have baby monitors?,ask_child_policy
+Charge for extra child?,ask_child_policy
+Kids pool?,ask_child_policy
+Activities for kids?,ask_child_policy
+Are children welcome?,ask_child_policy
+Discount for kids?,ask_child_policy
+How much for a kid?,ask_child_policy
+Toddler friendly?,ask_child_policy
+Infant policy,ask_child_policy
+Teenager policy,ask_child_policy
+Do you provide diapers?,ask_child_policy
+Bottle warmer?,ask_child_policy
+Kids entertainment,ask_child_policy
+Are there connecting rooms?,ask_child_policy
+Child price,ask_child_policy
+Free for under 12?,ask_child_policy
+Can my child sleep with me?,ask_child_policy
+Cot price,ask_child_policy
+Baby bed,ask_child_policy
+Kids facilities,ask_child_policy
+Games for kids?,ask_child_policy
+Is the hotel safe for kids?,ask_child_policy
+Child care?,ask_child_policy
+Nanny service?,ask_child_policy
+Kids program,ask_child_policy
+Family rules,ask_child_policy
+Junior suite?,ask_child_policy
+Kid rules?,ask_child_policy
+Baby rules?,ask_child_policy
+Infant policy?,ask_child_policy
+Toddler allowed?,ask_child_policy
+Teenager count?,ask_child_policy
+Children fee?,ask_child_policy
+Kid price?,ask_child_policy
+Baby charge?,ask_child_policy
+Free for kids?,ask_child_policy
+Kids stay gratis?,ask_child_policy
+No charge for child?,ask_child_policy
+Age for free stay?,ask_child_policy
+12 year old limit?,ask_child_policy
+Under 12 free?,ask_child_policy
+Crib provided?,ask_child_policy
+Cot provided?,ask_child_policy
+Bed for baby?,ask_child_policy
+High chair?,ask_child_policy
+Seat for baby?,ask_child_policy
+Kids eating?,ask_child_policy
+Child meal?,ask_child_policy
+Baby food?,ask_child_policy
+Nanny?,ask_child_policy
+Babysitter?,ask_child_policy
+Child care?,ask_child_policy
+Kids corner?,ask_child_policy
+Play area?,ask_child_policy
+Toy room?,ask_child_policy
+Family friendly?,ask_child_policy
+Kid friendly?,ask_child_policy
+Safe for baby?,ask_child_policy
+Connecting door?,ask_child_policy
+Family suite?,ask_child_policy
+Extra bed for kid?,ask_child_policy
+Rollaway bed?,ask_child_policy
+Mattress for child?,ask_child_policy
+Kids pool access?,ask_child_policy
+Baby swim?,ask_child_policy
+Stroller?,ask_child_policy
+Pram?,ask_child_policy
+Bottle heating?,ask_child_policy
+Diaper disposal?,ask_child_policy
+Kid amenities?,ask_child_policy
+Child toothbrush?,ask_child_policy
+Fun for kids?,ask_child_policy
+Kids activity?,ask_child_policy
+Child discount?,ask_child_policy
+Junior rate?,ask_child_policy
+Minor policy?,ask_child_policy
+Guardian needed?,ask_child_policy
+Kids welcome?,ask_child_policy
+Breakfast info?,ask_breakfast_details
+What time is breakfast?,ask_breakfast_details
+Is breakfast included?,ask_breakfast_details
+Breakfast price?,ask_breakfast_details
+Type of breakfast?,ask_breakfast_details
+Buffet breakfast?,ask_breakfast_details
+Continental breakfast?,ask_breakfast_details
+Vegan options?,ask_breakfast_details
+Gluten free breakfast?,ask_breakfast_details
+Halal breakfast?,ask_breakfast_details
+Where is breakfast served?,ask_breakfast_details
+Room service breakfast?,ask_breakfast_details
+Can I eat in my room?,ask_breakfast_details
+Breakfast menu,ask_breakfast_details
+What do you serve?,ask_breakfast_details
+Eggs and bacon?,ask_breakfast_details
+Pancakes?,ask_breakfast_details
+Coffee included?,ask_breakfast_details
+Breakfast hours,ask_breakfast_details
+When does breakfast start?,ask_breakfast_details
+When does breakfast end?,ask_breakfast_details
+Early breakfast?,ask_breakfast_details
+Breakfast to go?,ask_breakfast_details
+Packed breakfast?,ask_breakfast_details
+Full English breakfast?,ask_breakfast_details
+American breakfast?,ask_breakfast_details
+Asian breakfast?,ask_breakfast_details
+Healthy breakfast?,ask_breakfast_details
+Kids breakfast?,ask_breakfast_details
+Cost of breakfast buffet,ask_breakfast_details
+Is breakfast free?,ask_breakfast_details
+Do I need to book breakfast?,ask_breakfast_details
+Breakfast details,ask_breakfast_details
+Is breakfast hot?,ask_breakfast_details
+Cold buffet?,ask_breakfast_details
+Breakfast time,ask_breakfast_details
+Breakfast location,ask_breakfast_details
+Can I have breakfast later?,ask_breakfast_details
+Late breakfast?,ask_breakfast_details
+Breakfast specials,ask_breakfast_details
+Pastries?,ask_breakfast_details
+Fruit?,ask_breakfast_details
+Juice?,ask_breakfast_details
+Yogurt?,ask_breakfast_details
+Breakfast seating,ask_breakfast_details
+Outdoor breakfast?,ask_breakfast_details
+Breakfast charge,ask_breakfast_details
+Add breakfast,ask_breakfast_details
+Skip breakfast,ask_breakfast_details
+Breakfast policy,ask_breakfast_details
+Morning meal?,ask_breakfast_details
+First meal?,ask_breakfast_details
+Eating in morning?,ask_breakfast_details
+Food start time?,ask_breakfast_details
+Buffet details?,ask_breakfast_details
+Menu for breakfast?,ask_breakfast_details
+What is to eat?,ask_breakfast_details
+Coffee available?,ask_breakfast_details
+Tea available?,ask_breakfast_details
+Juice included?,ask_breakfast_details
+Fruit included?,ask_breakfast_details
+Toast and eggs?,ask_breakfast_details
+Nasi Lemak?,ask_breakfast_details
+Local food?,ask_breakfast_details
+Western food?,ask_breakfast_details
+Continental spread?,ask_breakfast_details
+Vegan food?,ask_breakfast_details
+Vegetarian options?,ask_breakfast_details
+Halal certified?,ask_breakfast_details
+Pork free?,ask_breakfast_details
+Gluten free?,ask_breakfast_details
+Allergy info?,ask_breakfast_details
+Eat in room?,ask_breakfast_details
+Room service food?,ask_breakfast_details
+Breakfast box?,ask_breakfast_details
+Takeaway breakfast?,ask_breakfast_details
+Packed meal?,ask_breakfast_details
+Price for meal?,ask_breakfast_details
+Cost to eat?,ask_breakfast_details
+Add breakfast?,ask_breakfast_details
+Include food?,ask_breakfast_details
+Is it free?,ask_breakfast_details
+Complimentary meal?,ask_breakfast_details
+Voucher for breakfast?,ask_breakfast_details
+Where to eat?,ask_breakfast_details
+Restaurant location?,ask_breakfast_details
+Cafe details?,ask_breakfast_details
+Dining area?,ask_breakfast_details
+Breakfast timing?,ask_breakfast_details
+End time for food?,ask_breakfast_details
+Last call for breakfast?,ask_breakfast_details
+Early bird breakfast?,ask_breakfast_details
+Late riser breakfast?,ask_breakfast_details
+Crowded at breakfast?,ask_breakfast_details
+Table reservation?,ask_breakfast_details
+Kids eat free?,ask_breakfast_details
+Family breakfast?,ask_breakfast_details
+Couple breakfast?,ask_breakfast_details
+Solo breakfast?,ask_breakfast_details
+Breakfast rules?,ask_breakfast_details
+Airport transfer?,ask_airport_transfer
+Do you have a shuttle?,ask_airport_transfer
+Airport pickup?,ask_airport_transfer
+Airport drop off?,ask_airport_transfer
+Cost of transfer?,ask_airport_transfer
+How to get to airport?,ask_airport_transfer
+Taxi to airport?,ask_airport_transfer
+Shuttle bus?,ask_airport_transfer
+Is the shuttle free?,ask_airport_transfer
+Private car to airport?,ask_airport_transfer
+Limo service?,ask_airport_transfer
+Book airport ride,ask_airport_transfer
+Distance to airport?,ask_airport_transfer
+Time to airport?,ask_airport_transfer
+Airport transport,ask_airport_transfer
+Pick me up,ask_airport_transfer
+Ride to airport,ask_airport_transfer
+Arrange transport,ask_airport_transfer
+Shuttle schedule,ask_airport_transfer
+Bus to airport?,ask_airport_transfer
+Train to airport?,ask_airport_transfer
+Airport taxi price,ask_airport_transfer
+Uber to airport?,ask_airport_transfer
+Airport connection,ask_airport_transfer
+Transfer service,ask_airport_transfer
+Meet and greet?,ask_airport_transfer
+Driver details,ask_airport_transfer
+Car service,ask_airport_transfer
+Van to airport?,ask_airport_transfer
+Transfer fee,ask_airport_transfer
+Is transfer 24 hours?,ask_airport_transfer
+Early morning transfer?,ask_airport_transfer
+Late night transfer?,ask_airport_transfer
+Booking transfer,ask_airport_transfer
+Airport shuttle stops,ask_airport_transfer
+Direct transfer?,ask_airport_transfer
+Shared shuttle?,ask_airport_transfer
+Private transfer?,ask_airport_transfer
+Helicopter transfer?,ask_airport_transfer
+Airport code?,ask_airport_transfer
+Terminal pickup?,ask_airport_transfer
+Terminal drop off?,ask_airport_transfer
+Luggage on shuttle?,ask_airport_transfer
+Child seat in transfer?,ask_airport_transfer
+Transfer duration,ask_airport_transfer
+Traffic to airport,ask_airport_transfer
+Best way to airport,ask_airport_transfer
+Airport ride cost,ask_airport_transfer
+Shuttle availability,ask_airport_transfer
+Airport link,ask_airport_transfer
+Transport to airport?,ask_airport_transfer
+Ride to KLIA?,ask_airport_transfer
+Shuttle service?,ask_airport_transfer
+Van to airport?,ask_airport_transfer
+Limo to airport?,ask_airport_transfer
+Car to airport?,ask_airport_transfer
+Taxi booking?,ask_airport_transfer
+Grab available?,ask_airport_transfer
+Train to airport?,ask_airport_transfer
+Express train?,ask_airport_transfer
+Bus connection?,ask_airport_transfer
+Pickup service?,ask_airport_transfer
+Drop off service?,ask_airport_transfer
+Meet at airport?,ask_airport_transfer
+Driver waiting?,ask_airport_transfer
+Cost of ride?,ask_airport_transfer
+Price for shuttle?,ask_airport_transfer
+Fee for transport?,ask_airport_transfer
+Is it free?,ask_airport_transfer
+Complimentary ride?,ask_airport_transfer
+Book a ride?,ask_airport_transfer
+Reserve car?,ask_airport_transfer
+Schedule pickup?,ask_airport_transfer
+Timetable for shuttle?,ask_airport_transfer
+Frequency of bus?,ask_airport_transfer
+How long to airport?,ask_airport_transfer
+Traffic to airport?,ask_airport_transfer
+Distance to KLIA?,ask_airport_transfer
+Terminal 1?,ask_airport_transfer
+Terminal 2?,ask_airport_transfer
+KLIA1?,ask_airport_transfer
+KLIA2?,ask_airport_transfer
+Luggage in car?,ask_airport_transfer
+Child seat in car?,ask_airport_transfer
+Private transfer?,ask_airport_transfer
+Shared ride?,ask_airport_transfer
+Public transport?,ask_airport_transfer
+Nearest station to airport?,ask_airport_transfer
+Late night ride?,ask_airport_transfer
+Early morning ride?,ask_airport_transfer
+24h transfer?,ask_airport_transfer
+Safe driver?,ask_airport_transfer
+Reliable ride?,ask_airport_transfer
+Airport taxi?,ask_airport_transfer
+Metered taxi?,ask_airport_transfer
+Fixed price ride?,ask_airport_transfer
+Luxury car?,ask_airport_transfer
+Budget ride?,ask_airport_transfer
+Fastest way?,ask_airport_transfer
+Best route?,ask_airport_transfer
+What to do nearby?,ask_nearby_attractions
+Attractions nearby?,ask_nearby_attractions
+Tourist spots?,ask_nearby_attractions
+Places to visit?,ask_nearby_attractions
+Sightseeing?,ask_nearby_attractions
+Near city center?,ask_nearby_attractions
+Shopping nearby?,ask_nearby_attractions
+Restaurants nearby?,ask_nearby_attractions
+Best places to eat?,ask_nearby_attractions
+Museums nearby?,ask_nearby_attractions
+Parks nearby?,ask_nearby_attractions
+Nightlife?,ask_nearby_attractions
+Bars nearby?,ask_nearby_attractions
+Clubs nearby?,ask_nearby_attractions
+Beach nearby?,ask_nearby_attractions
+Historical sites?,ask_nearby_attractions
+Local attractions,ask_nearby_attractions
+Things to see,ask_nearby_attractions
+Where to go?,ask_nearby_attractions
+Recommendations?,ask_nearby_attractions
+Hidden gems?,ask_nearby_attractions
+Popular spots,ask_nearby_attractions
+Walking tour?,ask_nearby_attractions
+City tour?,ask_nearby_attractions
+Is there a cinema?,ask_nearby_attractions
+Is there a theater?,ask_nearby_attractions
+Concert hall?,ask_nearby_attractions
+Stadium nearby?,ask_nearby_attractions
+Zoo nearby?,ask_nearby_attractions
+Aquarium nearby?,ask_nearby_attractions
+Art gallery?,ask_nearby_attractions
+Market nearby?,ask_nearby_attractions
+Mall nearby?,ask_nearby_attractions
+Supermarket nearby?,ask_nearby_attractions
+Pharmacy nearby?,ask_nearby_attractions
+Bank nearby?,ask_nearby_attractions
+ATM nearby?,ask_nearby_attractions
+Post office nearby?,ask_nearby_attractions
+Tourist info,ask_nearby_attractions
+Local guide?,ask_nearby_attractions
+Best view?,ask_nearby_attractions
+Scenic spots,ask_nearby_attractions
+Hiking nearby?,ask_nearby_attractions
+Cycling nearby?,ask_nearby_attractions
+Boat tour?,ask_nearby_attractions
+Bus tour?,ask_nearby_attractions
+Landmarks,ask_nearby_attractions
+Must see,ask_nearby_attractions
+What is famous here?,ask_nearby_attractions
+Local culture,ask_nearby_attractions
+Sights to see?,ask_nearby_attractions
+Tourist spots?,ask_nearby_attractions
+Places of interest?,ask_nearby_attractions
+Local landmarks?,ask_nearby_attractions
+Famous places?,ask_nearby_attractions
+Must visit?,ask_nearby_attractions
+Where to go?,ask_nearby_attractions
+What to do?,ask_nearby_attractions
+Activities nearby?,ask_nearby_attractions
+Entertainment?,ask_nearby_attractions
+Shopping malls?,ask_nearby_attractions
+Retail therapy?,ask_nearby_attractions
+Food street?,ask_nearby_attractions
+Local eats?,ask_nearby_attractions
+Hawker center?,ask_nearby_attractions
+Night market?,ask_nearby_attractions
+Pasar malam?,ask_nearby_attractions
+Museums?,ask_nearby_attractions
+Galleries?,ask_nearby_attractions
+Parks?,ask_nearby_attractions
+Gardens?,ask_nearby_attractions
+Nature spots?,ask_nearby_attractions
+Towers?,ask_nearby_attractions
+Skyline view?,ask_nearby_attractions
+Photo spots?,ask_nearby_attractions
+Instagram spots?,ask_nearby_attractions
+Historical buildings?,ask_nearby_attractions
+Culture spots?,ask_nearby_attractions
+Temples?,ask_nearby_attractions
+Mosques?,ask_nearby_attractions
+Churches?,ask_nearby_attractions
+Clubs?,ask_nearby_attractions
+Bars?,ask_nearby_attractions
+Pubs?,ask_nearby_attractions
+Nightlife?,ask_nearby_attractions
+Cinema?,ask_nearby_attractions
+Movies?,ask_nearby_attractions
+Bowling?,ask_nearby_attractions
+Karaoke?,ask_nearby_attractions
+Family fun?,ask_nearby_attractions
+Kids activities?,ask_nearby_attractions
+Walking tour?,ask_nearby_attractions
+City guide?,ask_nearby_attractions
+Map of sights?,ask_nearby_attractions
+Distance to KLCC?,ask_nearby_attractions
+Near Twin Towers?,ask_nearby_attractions
+Near Pavilion?,ask_nearby_attractions
+Near Chinatown?,ask_nearby_attractions
+Near Little India?,ask_nearby_attractions
+Tourism help?,ask_nearby_attractions
+I lost something,ask_lost_item
+Lost and found?,ask_lost_item
+Did you find my phone?,ask_lost_item
+I left my bag,ask_lost_item
+Forgot my charger,ask_lost_item
+Missing item,ask_lost_item
+Lost property,ask_lost_item
+Did I leave my keys?,ask_lost_item
+Found a wallet?,ask_lost_item
+I lost my glasses,ask_lost_item
+Check the room for me,ask_lost_item
+I left something behind,ask_lost_item
+Did cleaning staff find it?,ask_lost_item
+My passport is gone,ask_lost_item
+I lost my ring,ask_lost_item
+Missing watch,ask_lost_item
+I forgot my jacket,ask_lost_item
+Left my coat,ask_lost_item
+Did you see my laptop?,ask_lost_item
+I lost my headphones,ask_lost_item
+Lost item report,ask_lost_item
+Can you look for my shoe?,ask_lost_item
+I missing a sock,ask_lost_item
+Lost toy,ask_lost_item
+Did you find a camera?,ask_lost_item
+I left my id,ask_lost_item
+Credit card missing,ask_lost_item
+Lost jewelry,ask_lost_item
+Did housekeeping find anything?,ask_lost_item
+I think I left it in the lobby,ask_lost_item
+Lost at the pool,ask_lost_item
+Forgot item in restaurant,ask_lost_item
+Can you mail it to me?,ask_lost_item
+Return lost item,ask_lost_item
+I left my luggage,ask_lost_item
+Did you find a book?,ask_lost_item
+Missing umbrella,ask_lost_item
+Lost hat,ask_lost_item
+I left my scarf,ask_lost_item
+Did you find my tablet?,ask_lost_item
+I lost my money,ask_lost_item
+Missing documents,ask_lost_item
+Search for my item,ask_lost_item
+Did you find a blue bag?,ask_lost_item
+I left a gift,ask_lost_item
+Lost item inquiry,ask_lost_item
+Help I lost something,ask_lost_item
+Did you see it?,ask_lost_item
+Check lost and found,ask_lost_item
+Item recovery,ask_lost_item
+Misplaced my phone,ask_lost_item
+Left my wallet,ask_lost_item
+Forgot my keys,ask_lost_item
+Missing bag,ask_lost_item
+Cannot find my glasses,ask_lost_item
+Where is my coat?,ask_lost_item
+Left item in room,ask_lost_item
+Forgot item in lobby,ask_lost_item
+Left bag in taxi,ask_lost_item
+Lost property?,ask_lost_item
+Found items?,ask_lost_item
+Did you see my ring?,ask_lost_item
+Is my watch there?,ask_lost_item
+Search for item?,ask_lost_item
+Look for my stuff?,ask_lost_item
+Retrieve belonging?,ask_lost_item
+Recover lost item?,ask_lost_item
+Item missing,ask_lost_item
+Gone missing,ask_lost_item
+Disappeared?,ask_lost_item
+Stolen?,ask_lost_item
+Taken?,ask_lost_item
+Did maid find it?,ask_lost_item
+Housekeeping found it?,ask_lost_item
+Security found it?,ask_lost_item
+Log of lost items?,ask_lost_item
+Report missing?,ask_lost_item
+File a report?,ask_lost_item
+Claim item?,ask_lost_item
+Identify item?,ask_lost_item
+Return to me?,ask_lost_item
+Send back?,ask_lost_item
+Mail to me?,ask_lost_item
+Courier my bag?,ask_lost_item
+I left a gift,ask_lost_item
+I left a book,ask_lost_item
+I left a charger,ask_lost_item
+I left an adapter,ask_lost_item
+I left headphones,ask_lost_item
+I left clothes,ask_lost_item
+I left shoes,ask_lost_item
+I left makeup,ask_lost_item
+I left toiletries,ask_lost_item
+I left documents,ask_lost_item
+I left passport,ask_lost_item
+I left ID,ask_lost_item
+I left cash,ask_lost_item
+I left credit card,ask_lost_item
+Help find item,ask_lost_item
+Lost and found help,ask_lost_item
