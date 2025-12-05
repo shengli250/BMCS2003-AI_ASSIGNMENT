@@ -91,8 +91,8 @@ def preprocess_text(text):
 @st.cache_resource
 def load_model_resources():
     try:
-        model = joblib.load('lr_model.joblib')
-        vectorizer = joblib.load('tfidf_vectorizer.joblib')
+        model = joblib.load('logistic_regression_intent_model.joblib')
+        vectorizer = joblib.load('tfidf_vectorizerLR.joblib')
         return model, vectorizer
     except FileNotFoundError:
         st.error("Model files not found! Please run 'train_chatbot_lr.py' first.")
