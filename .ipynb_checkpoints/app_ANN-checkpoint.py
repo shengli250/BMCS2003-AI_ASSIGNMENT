@@ -23,10 +23,13 @@ def load_response_json():
     try:
         with open('responses.json', 'r', encoding='utf-8') as f:
             responses = json.load(f)
+        return responses
     except FileNotFoundError:
         st.error("responses.json file not found. Please upload it.")
+        return {}
     except json.JSONDecodeError:
         st.error("Error decoding responses.json. Please check the file format.")
+        return {}
 
 RESPONSE_DICT = load_response_json()
 
