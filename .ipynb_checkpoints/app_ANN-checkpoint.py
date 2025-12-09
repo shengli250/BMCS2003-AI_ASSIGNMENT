@@ -21,18 +21,12 @@ CONFIDENCE_THRESHOLD = 0.50 # Lowered slightly to be more forgiving, adjust as n
 def load_response_json():
     """Loads the response configuration from the JSON file."""
     try:
-        with open('response.json', 'r', encoding='utf-8') as f:
+        with open('responses.json', 'r', encoding='utf-8') as f:
             responses = json.load(f)
-        # Add a default fallback if not present in file
-        if "unrecognized_intent" not in responses:
-            responses["unrecognized_intent"] = "I apologize, but I currently cannot understand your request. Could you please try rephrasing your question?"
-        return responses
     except FileNotFoundError:
-        st.error("response.json file not found. Please upload it.")
-        return {"unrecognized_intent": "System Error: Responses not loaded."}
+        st.error("responses.json file not found. Please upload it.")
     except json.JSONDecodeError:
-        st.error("Error decoding response.json. Please check the file format.")
-        return {"unrecognized_intent": "System Error: Invalid JSON format."}
+        st.error("Error decoding responses.json. Please check the file format.")
 
 RESPONSE_DICT = load_response_json()
 
@@ -40,38 +34,57 @@ RESPONSE_DICT = load_response_json()
 # Mapping of intent keys to user-friendly natural language prompts for buttons
 # This list now covers all intents found in the complete dataset/json
 PROMPT_MAPPING = {
-    # General Info
-    "ask_room_price": "What are the room rates?",
-    "ask_availability": "Do you have rooms available?",
-    "ask_facilities": "What facilities do you have?",
-    "ask_location": "Where is the hotel located?",
+    # General
+    "check_functions": "What services do you offer?",
+    "human_agent": "Can I speak to a human agent?",
+
+    # Booking & Rates
+    "book_hotel": "I want to book a room.",
+    "check_hotel_prices": "What are your room rates?",
+    "check_room_availability": "Do you have rooms available?",
+    "check_room_type": "What types of rooms do you have?",
+    "check_hotel_offers": "Do you have any special offers?",
+    "search_hotel": "I am looking for a hotel details.",
+
+    # Reservation Management
+    "check_hotel_reservation": "Can I check my booking details?",
+    "change_hotel_reservation": "I need to modify my reservation.",
+    "cancel_hotel_reservation": "I want to cancel my booking.",
+    "cancellation_fees": "Is there a cancellation fee?",
+    "add_night": "Can I extend my stay?",
+    "get_refund": "How do I request a refund?",
+
+    # Check-in/out & Stay
+    "check_in": "What time is check-in?",
+    "check_out": "What time is check-out?",
+    "invoices": "Can I get a copy of my invoice?",
+    "check_payment_methods": "What payment methods are accepted?",
+
+    # Policies
+    "bring_pets": "Are pets allowed?",
+    "check_child_policy": "What is the policy for children?",
+    "check_smoking_policy": "Is smoking allowed in rooms?",
     
-    # Check-in/out & Booking
-    "ask_checkin_time": "What time is check-in?",
-    "ask_checkout_time": "What time is check-out?",
-    "ask_booking": "How can I book a room?",
-    "ask_cancellation": "What is the cancellation policy?",
+    # Facilities & Services
+    "check_hotel_facilities": "What facilities does the hotel have?",
+    "book_parking_space": "Do you have parking available?",
+    "shuttle_service": "Do you offer airport shuttle?",
+    "store_luggage": "Can I store my luggage?",
+    "check_menu": "Can I see the restaurant menu?",
+    "host_event": "I would like to host an event.",
     
-    # Policies & Services
-    "ask_pet_policy": "Are pets allowed?",
-    "ask_smoking_policy": "Is smoking allowed?",
-    "ask_child_policy": "What is the policy for children?",
-    "ask_luggage_storage": "Can I store my luggage?",
-    "ask_breakfast_details": "Is breakfast included?",
-    "ask_airport_transfer": "Do you offer airport pickup?",
-    
-    # Assistance
-    "ask_nearby_attractions": "What is nearby?",
-    "ask_lost_item": "I lost an item, can you help?",
-    
-    # Social (Usually not used for buttons, but mapped for completeness)
-    "greeting": "Hello!",
-    "goodbye": "Goodbye!"
+    # Support & Feedback
+    "customer_service": "Contact customer service.",
+    "check_lost_item": "I lost an item, can you help?",
+    "file_complaint": "I want to file a complaint.",
+    "leave_review": "Where can I leave a review?",
+    "redeem_points": "How do I redeem loyalty points?",
+    "check_nearby_attractions": "What attractions are nearby?"
 }
 
 # Valid intents to be used for random suggestions
 # We exclude 'greeting' and 'goodbye' from the random suggestions buttons as they are conversational
-EXCLUDED_FROM_SUGGESTIONS = ["greeting", "goodbye"]
+EXCLUDED_FROM_SUGGESTIONS = ["greeting", "goodbye", "unknown_intent"]
 
 # Filter keys to ensure they actually exist in the loaded RESPONSE_DICT or PROMPT_MAPPING
 SUGGESTED_INTENTS = [
@@ -104,14 +117,14 @@ else:
     stop_words = set()
     lemmatizer = None
 
-def preprocess_text(text):
+def preprocess_instruction(instruction):
     """Applies the same preprocessing steps as the training script."""
     if not lemmatizer:
         return "" # Handle case where NLTK setup failed
         
-    text = str(text).lower()
-    text = re.sub(r'[^\w\s]', '', text)
-    tokens = word_tokenize(text)
+    instruction = str(instruction).lower()
+    instruction = re.sub(r'[^\w\s]', '', instruction)
+    tokens = word_tokenize(instruction)
     tokens = [word for word in tokens if word not in stop_words]
     tokens = [lemmatizer.lemmatize(word) for word in tokens]
     return ' '.join(tokens)
@@ -138,7 +151,7 @@ def load_resources():
 ann_model, vectorizer, le = load_resources()
 
 # --- D. Prediction Function (With Response Time) ---
-def predict_intent(text):
+def predict_intent(instruction):
     """
     Predicts the intent using the ANN model and applies a confidence threshold.
     Also measures the time taken for the prediction.
@@ -147,10 +160,10 @@ def predict_intent(text):
 
     if ann_model is None or vectorizer is None or le is None or not lemmatizer:
         end_time = time.time()
-        return "setup_error", RESPONSE_DICT.get("unrecognized_intent"), "N/A", end_time - start_time
+        return "setup_error", RESPONSE_DICT.get("unknown_intent"), "N/A", end_time - start_time
 
     # 1. Preprocessing and Feature Extraction (Sparse Matrix)
-    user_input_cleaned = preprocess_text(text)
+    user_input_cleaned = preprocess_instruction(instruction)
     vector = vectorizer.transform([user_input_cleaned])
 
     # Convert sparse TFIDF vector to dense matrix, as MLPClassifier was trained on dense data
@@ -167,7 +180,7 @@ def predict_intent(text):
     
     # 3. Apply Confidence Threshold Logic
     if confidence_score < CONFIDENCE_THRESHOLD:
-        intent_name = "unrecognized_intent"
+        intent_name = "unknown_intent"
         response = RESPONSE_DICT.get(intent_name)
     else:
         # Convert the predicted ID back to the intent name
@@ -187,7 +200,7 @@ def predict_intent(text):
 def main():
     st.set_page_config(page_title="Hotel AI Assistant", layout="centered")
 
-    st.title("🤖 Grand Hotel FAQ Chatbot (MLPClassifier Model)")
+    st.title("🤖 Astra Imperium Hotel FAQ Chatbot (MLPClassifier Model)")
     st.markdown("Ask me about room rates, availability, facilities, and more!")
 
     # 1. Initialize chat history (Session State)
@@ -195,8 +208,8 @@ def main():
         st.session_state.messages = []
         # Add an initial greeting message
         # Check if 'greeting' exists in loaded dictionary, otherwise use default
-        greeting_text = RESPONSE_DICT.get('greeting', "Hello! How may I assist you today?")
-        st.session_state.messages.append({"role": "assistant", "content": greeting_text})
+        greeting_instruction = RESPONSE_DICT.get('greeting', "Hello! How may I assist you today?")
+        st.session_state.messages.append({"role": "assistant", "content": greeting_instruction})
 
     # Initialize state for handling button clicks (Suggested Questions)
     if "pending_input" not in st.session_state:
@@ -222,12 +235,12 @@ def main():
 
         # Iterate through random intents to create buttons
         for i, intent_key in enumerate(random_intents):
-            prompt_text = PROMPT_MAPPING.get(intent_key, intent_key)
+            prompt_instruction = PROMPT_MAPPING.get(intent_key, intent_key)
             with cols[i]:
-                # Check if the button is clicked, and if so, set the input text
-                if st.button(prompt_text, key=f"btn_{intent_key}", use_container_width=True):
-                    # Store the button text in session_state and trigger a rerun
-                    st.session_state.pending_input = prompt_text
+                # Check if the button is clicked, and if so, set the input instruction
+                if st.button(prompt_instruction, key=f"btn_{intent_key}", use_container_width=True):
+                    # Store the button instruction in session_state and trigger a rerun
+                    st.session_state.pending_input = prompt_instruction
                     st.rerun()
 
     # --- 4. Handle User/Button Input ---
