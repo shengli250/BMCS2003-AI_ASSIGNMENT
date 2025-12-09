@@ -203,7 +203,7 @@ def predict_intent(instruction):
 def main():
     st.set_page_config(page_title="Hotel AI Assistant", layout="centered")
 
-    st.title("🤖 Astra Imperium Hotel FAQ Chatbot (MLPClassifier Model)")
+    st.title("🏨 Astra Imperium Hotel FAQ Chatbot (MLPClassifier Model)")
     st.markdown("Ask me about room rates, availability, facilities, and more!")
 
     # 1. Initialize chat history (Session State)
