@@ -1,0 +1,885 @@
+instruction,intent
+Hello,greeting
+Hi,greeting
+Hey,greeting
+Good morning,greeting
+Good afternoon,greeting
+Good evening,greeting
+Hi there,greeting
+Greetings,greeting
+Hello bot,greeting
+Are you there?,greeting
+Is anyone online?,greeting
+Hello hotel,greeting
+Hi help,greeting
+Start chat,greeting
+Yo,greeting
+Hiya,greeting
+Hola,greeting
+Anyone home?,greeting
+Good day,greeting
+Hello friend,greeting
+Hi reception,greeting
+Greeting,greeting
+Hello support,greeting
+Hey there,greeting
+Just saying hi,greeting
+Am I speaking to a human?,greeting
+Hi!,greeting
+Hello!,greeting
+Hey!,greeting
+Good morning!,greeting
+Hi there!,greeting
+"Hello, how are you?",greeting
+"Hey, how is it going?",greeting
+"Hi, are you a bot?",greeting
+"Hello, I have a question",greeting
+"Hey, quick question",greeting
+"Hi, are you open?",greeting
+Hello from me,greeting
+Hi hi,greeting
+Heya,greeting
+Hellooooo,greeting
+Is anybody there?,greeting
+Knock knock,greeting
+Hello system,greeting
+Hi computer,greeting
+Greetings to you,greeting
+Salutations,greeting
+Hi team,greeting
+Hello staff,greeting
+Hey bot,greeting
+Good day to you,greeting
+Greetings bot,greeting
+Hi there friend,greeting
+Hello nice to meet you,greeting
+Hey how are you,greeting
+Hi assistant,greeting
+Hello there,greeting
+Just saying hello,greeting
+Hi I am new here,greeting
+Hello can we chat?,greeting
+Hi start,greeting
+Hey I need help,greeting
+Good morning to you,greeting
+Good afternoon there,greeting
+Good evening friend,greeting
+Hi chat,greeting
+Hello application,greeting
+Hey system,greeting
+Greetings from me,greeting
+Hi robot,greeting
+Hello virtual agent,greeting
+Hey nice day,greeting
+Hi nice to see you,greeting
+Hello are you active?,greeting
+Hi is this the bot?,greeting
+Greetings support team,greeting
+Hello concierge,greeting
+Hey help desk,greeting
+Hi front desk,greeting
+Hello reception,greeting
+Hey can you assist?,greeting
+Hi I have a query,greeting
+Hello question here,greeting
+Hey quick one,greeting
+Hi looking for info,greeting
+Hello info please,greeting
+Hey service,greeting
+Hi hotel bot,greeting
+Hello guest services,greeting
+Hey there bot,greeting
+Hi good day,greeting
+Hello morning,greeting
+Hey afternoon,greeting
+Hi evening,greeting
+Hello night,greeting
+Hey there system,greeting
+Hi computer agent,greeting
+Hello digital assistant,greeting
+Hey auto reply,greeting
+Hi message,greeting
+Bye,goodbye
+Goodbye,goodbye
+See you,goodbye
+See ya,goodbye
+Later,goodbye
+Talk to you later,goodbye
+Have a good day,goodbye
+Goodnight,goodbye
+Bye bye,goodbye
+Ending chat,goodbye
+I'm leaving,goodbye
+"Thanks, bye",goodbye
+Catch you later,goodbye
+Closing this,goodbye
+Done,goodbye
+Thx bye,goodbye
+See you later,goodbye
+Have a nice day,goodbye
+Bye for now,goodbye
+I have to go,goodbye
+Gotta go,goodbye
+Leaving now,goodbye
+End session,goodbye
+Quit,goodbye
+Exit,goodbye
+Stop chat,goodbye
+"No more questions, bye",goodbye
+"Thank you, goodbye",goodbye
+See you soon,goodbye
+Peace out,goodbye
+Farewell,goodbye
+Cheerio,goodbye
+I am done,goodbye
+Finished,goodbye
+Signing off,goodbye
+Good bye,goodbye
+Bye bot,goodbye
+"Thanks for your help, bye",goodbye
+Okay bye,goodbye
+Till next time,goodbye
+Adios,goodbye
+Ciao,goodbye
+Have a great night,goodbye
+See you tomorrow,goodbye
+Bye now,goodbye
+"Okay, see you",goodbye
+"Thanks, see ya",goodbye
+"That's all, bye",goodbye
+I'm done here,goodbye
+Farewell,goodbye
+I am leaving now,goodbye
+Closing chat,goodbye
+End conversation,goodbye
+Stop talking,goodbye
+Quit session,goodbye
+Exit chat,goodbye
+I'm going now,goodbye
+Talk later,goodbye
+Speak soon,goodbye
+Until next time,goodbye
+Bye for today,goodbye
+Good bye friend,goodbye
+Leaving the chat,goodbye
+Signing out,goodbye
+Logging off,goodbye
+Shutting down,goodbye
+Go to sleep,goodbye
+Thanks and bye,goodbye
+Okay goodbye,goodbye
+Bye see ya,goodbye
+Later gator,goodbye
+Have a good one,goodbye
+Nice chatting bye,goodbye
+Ending this now,goodbye
+Terminate chat,goodbye
+Finish,goodbye
+Complete session,goodbye
+No more info needed,goodbye
+That is all bye,goodbye
+All done bye,goodbye
+Leaving now thanks,goodbye
+Going offline,goodbye
+Bye take care,goodbye
+Goodbye have fun,goodbye
+See you around,goodbye
+Catch you on the flip side,goodbye
+Time to go,goodbye
+Must dash,goodbye
+Heading out,goodbye
+Departure,goodbye
+Vacating chat,goodbye
+Disconnecting,goodbye
+Bye assistant,goodbye
+Goodbye system,goodbye
+End,goodbye
+Stop,goodbye
+Halt,goodbye
+Finish chat,goodbye
+Done here,goodbye
+Child policy?,check_child_policy
+Kids stay free?,check_child_policy
+Do you have cribs?,check_child_policy
+Baby cots available?,check_child_policy
+Is it child friendly?,check_child_policy
+Family friendly?,check_child_policy
+Age limit for kids?,check_child_policy
+Extra bed for child?,check_child_policy
+Cost for children?,check_child_policy
+Do kids eat free?,check_child_policy
+Babysitting service?,check_child_policy
+Kids club?,check_child_policy
+Do you have high chairs?,check_child_policy
+Children allowed?,check_child_policy
+Max age for child rate?,check_child_policy
+Do you have family rooms?,check_child_policy
+Baby amenities?,check_child_policy
+Can I bring a baby?,check_child_policy
+Is there a playground?,check_child_policy
+Child safety?,check_child_policy
+Strollers available?,check_child_policy
+Baby bath?,check_child_policy
+Kids menu?,check_child_policy
+Do you have baby monitors?,check_child_policy
+Charge for extra child?,check_child_policy
+Kids pool?,check_child_policy
+Activities for kids?,check_child_policy
+Are children welcome?,check_child_policy
+Discount for kids?,check_child_policy
+How much for a kid?,check_child_policy
+Toddler friendly?,check_child_policy
+Infant policy,check_child_policy
+Teenager policy,check_child_policy
+Do you provide diapers?,check_child_policy
+Bottle warmer?,check_child_policy
+Kids entertainment,check_child_policy
+Are there connecting rooms?,check_child_policy
+Child price,check_child_policy
+Free for under 12?,check_child_policy
+Can my child sleep with me?,check_child_policy
+Cot price,check_child_policy
+Baby bed,check_child_policy
+Kids facilities,check_child_policy
+Games for kids?,check_child_policy
+Is the hotel safe for kids?,check_child_policy
+Child care?,check_child_policy
+Nanny service?,check_child_policy
+Kids program,check_child_policy
+Family rules,check_child_policy
+Junior suite?,check_child_policy
+Kid rules?,check_child_policy
+Baby rules?,check_child_policy
+Infant policy?,check_child_policy
+Toddler allowed?,check_child_policy
+Teenager count?,check_child_policy
+Children fee?,check_child_policy
+Kid price?,check_child_policy
+Baby charge?,check_child_policy
+Free for kids?,check_child_policy
+Kids stay gratis?,check_child_policy
+No charge for child?,check_child_policy
+Age for free stay?,check_child_policy
+12 year old limit?,check_child_policy
+Under 12 free?,check_child_policy
+Crib provided?,check_child_policy
+Cot provided?,check_child_policy
+Bed for baby?,check_child_policy
+High chair?,check_child_policy
+Seat for baby?,check_child_policy
+Kids eating?,check_child_policy
+Child meal?,check_child_policy
+Baby food?,check_child_policy
+Nanny?,check_child_policy
+Babysitter?,check_child_policy
+Child care?,check_child_policy
+Kids corner?,check_child_policy
+Play area?,check_child_policy
+Toy room?,check_child_policy
+Family friendly?,check_child_policy
+Kid friendly?,check_child_policy
+Safe for baby?,check_child_policy
+Family suite?,check_child_policy
+Extra bed for kid?,check_child_policy
+Rollaway bed?,check_child_policy
+Mattress for child?,check_child_policy
+Kids pool access?,check_child_policy
+Baby swim?,check_child_policy
+Stroller?,check_child_policy
+Pram?,check_child_policy
+Bottle heating?,check_child_policy
+Diaper disposal?,check_child_policy
+Kid amenities?,check_child_policy
+Child toothbrush?,check_child_policy
+Fun for kids?,check_child_policy
+Kids activity?,check_child_policy
+Child discount?,check_child_policy
+Junior rate?,check_child_policy
+Minor policy?,check_child_policy
+Guardian needed?,check_child_policy
+Kids welcome?,check_child_policy
+Can I smoke?,check_smoking_policy
+Is smoking allowed?,check_smoking_policy
+Do you have smoking rooms?,check_smoking_policy
+Is it non-smoking?,check_smoking_policy
+Smoking policy?,check_smoking_policy
+Where can I smoke?,check_smoking_policy
+Is there a smoking area?,check_smoking_policy
+Can I smoke on the balcony?,check_smoking_policy
+Vaping allowed?,check_smoking_policy
+E-cigarettes allowed?,check_smoking_policy
+Fine for smoking?,check_smoking_policy
+Is the hotel smoke free?,check_smoking_policy
+Designated smoking zone?,check_smoking_policy
+Can I smoke in the lobby?,check_smoking_policy
+Cigars allowed?,check_smoking_policy
+Is cannabis allowed?,check_smoking_policy
+Smoking rules,check_smoking_policy
+Do you sell cigarettes?,check_smoking_policy
+Smokers area,check_smoking_policy
+I need a smoking room,check_smoking_policy
+I need a non-smoking room,check_smoking_policy
+Is the whole hotel non-smoking?,check_smoking_policy
+Can I smoke outside?,check_smoking_policy
+Where is the ashtray?,check_smoking_policy
+Smoking ban?,check_smoking_policy
+Penalty for smoking?,check_smoking_policy
+Can I smoke in the bathroom?,check_smoking_policy
+Is shisha allowed?,check_smoking_policy
+Smoking lounge?,check_smoking_policy
+Do you have a cigar bar?,check_smoking_policy
+Can I smoke at the pool?,check_smoking_policy
+Is vaping permitted?,check_smoking_policy
+Smoke free property?,check_smoking_policy
+Can I smoke on the terrace?,check_smoking_policy
+Are there fines for smoking?,check_smoking_policy
+Strictly non-smoking?,check_smoking_policy
+Smoking permitted?,check_smoking_policy
+Where to smoke?,check_smoking_policy
+Is the room smoking?,check_smoking_policy
+Can I smoke near the entrance?,check_smoking_policy
+Outdoor smoking area,check_smoking_policy
+Indoor smoking?,check_smoking_policy
+Electronic cigarettes?,check_smoking_policy
+Is the restaurant non-smoking?,check_smoking_policy
+Smoking laws,check_smoking_policy
+Can I smoke window open?,check_smoking_policy
+Does the room smell of smoke?,check_smoking_policy
+Smoke detector?,check_smoking_policy
+Smoking booth?,check_smoking_policy
+Tobacco policy?,check_smoking_policy
+Cigarette rules?,check_smoking_policy
+Tobacco policy?,check_smoking_policy
+Can I light up?,check_smoking_policy
+Vaping rules?,check_smoking_policy
+E-cig rules?,check_smoking_policy
+Use tobacco?,check_smoking_policy
+Smoke signal?,check_smoking_policy
+Designated area?,check_smoking_policy
+Smoking spot?,check_smoking_policy
+Where to puff?,check_smoking_policy
+Ashtray location?,check_smoking_policy
+Lobby smoking?,check_smoking_policy
+Room smoking?,check_smoking_policy
+Balcony smoking?,check_smoking_policy
+Terrace smoking?,check_smoking_policy
+Garden smoking?,check_smoking_policy
+Pool smoking?,check_smoking_policy
+Bar smoking?,check_smoking_policy
+Restaurant smoking?,check_smoking_policy
+Non-smoking hotel?,check_smoking_policy
+Smoke free?,check_smoking_policy
+Clean air policy?,check_smoking_policy
+Fine for lighting up?,check_smoking_policy
+Penalty fee?,check_smoking_policy
+Cost if I smoke?,check_smoking_policy
+Cleaning charge?,check_smoking_policy
+Smell of smoke?,check_smoking_policy
+Cannabis rules?,check_smoking_policy
+Weed policy?,check_smoking_policy
+Vape pen?,check_smoking_policy
+Electronic smoke?,check_smoking_policy
+Cigar lounge?,check_smoking_policy
+Pipe smoking?,check_smoking_policy
+Shisha?,check_smoking_policy
+Hookah?,check_smoking_policy
+Is it allowed to smoke?,check_smoking_policy
+Can I have a cigarette?,check_smoking_policy
+Quick smoke?,check_smoking_policy
+Smoking zone?,check_smoking_policy
+Outside smoking?,check_smoking_policy
+Entrance smoking?,check_smoking_policy
+Smoking prohibited?,check_smoking_policy
+No smoking sign?,check_smoking_policy
+Strictly no smoke?,check_smoking_policy
+Zero tolerance?,check_smoking_policy
+Smoke alarm?,check_smoking_policy
+Fire hazard?,check_smoking_policy
+Smoking laws?,check_smoking_policy
+Hotel smoking rules?,check_smoking_policy
+Guest smoking?,check_smoking_policy
+"What payment methods do you accept?",check_payment_methods
+"How can I pay at the hotel?",check_payment_methods
+"Do you take cash or card?",check_payment_methods
+"Can I pay with credit card?",check_payment_methods
+"What cards do you support?",check_payment_methods
+"Do you accept Visa?",check_payment_methods
+"Do you accept Mastercard?",check_payment_methods
+"Can I use AMEX?",check_payment_methods
+"Do you accept e-wallets?",check_payment_methods
+"Can I pay using Touch n Go?",check_payment_methods
+"Can I use GrabPay to pay?",check_payment_methods
+"Is cash payment allowed?",check_payment_methods
+"Do you take MYR cash?",check_payment_methods
+"What online payment methods do you support?",check_payment_methods
+"Can I pay with debit card?",check_payment_methods
+"Do you support international cards?",check_payment_methods
+"What are your accepted payment options?",check_payment_methods
+"How can I settle the bill?",check_payment_methods
+"What modes of payment do you have?",check_payment_methods
+"Do you accept foreign credit cards?",check_payment_methods
+"Can I pay with Apple Pay?",check_payment_methods
+"Is Samsung Pay accepted?",check_payment_methods
+"Can I use e-wallets to pay?",check_payment_methods
+"Do you accept PayWave?",check_payment_methods
+"Do you charge a deposit?",check_payment_methods
+"How much is the security deposit?",check_payment_methods
+"When do I pay the deposit?",check_payment_methods
+"Can I pay deposit using card?",check_payment_methods
+"Do you accept QR Pay?",check_payment_methods
+"Can I pay using DuitNow?",check_payment_methods
+"What is the RM100 deposit for?",check_payment_methods
+"Is the RM100 deposit refundable?",check_payment_methods
+"Do you accept UnionPay?",check_payment_methods
+"Can I pay via bank transfer?",check_payment_methods
+"Do you accept crypto?",check_payment_methods
+"Is PayPal accepted?",check_payment_methods
+"Do you accept prepaid cards?",check_payment_methods
+"Can someone else pay for me?",check_payment_methods
+"Do you need deposit during check-in?",check_payment_methods
+"Can I pay deposit in cash?",check_payment_methods
+"Do you offer contactless payment?",check_payment_methods
+"Can I pay by card during check-in?",check_payment_methods
+"Is deposit mandatory?",check_payment_methods
+"What do I need to pay when checking in?",check_payment_methods
+"Do you accept offline payments?",check_payment_methods
+"What payment options are there for bookings?",check_payment_methods
+"Can I pay later?",check_payment_methods
+"Do you allow split payment?",check_payment_methods
+"Can I use multiple cards?",check_payment_methods
+"Do you charge extra for card payments?",check_payment_methods
+"Are e-wallet payments free?",check_payment_methods
+"Is Touch n Go accepted at the reception?",check_payment_methods
+"Can I pay using GrabPay Credit?",check_payment_methods
+"Do you have a deposit system?",check_payment_methods
+"Is there any deposit required?",check_payment_methods
+"What is the deposit policy?",check_payment_methods
+"Do you accept cashless only?",check_payment_methods
+"Can I settle my bill with QR?",check_payment_methods
+"Are international e-wallets accepted?",check_payment_methods
+"What type of cards are supported?",check_payment_methods
+"Is credit card the only method?",check_payment_methods
+"Can I pay with Mastercard debit?",check_payment_methods
+"Do you accept JCB cards?",check_payment_methods
+"Do you accept Diners Club?",check_payment_methods
+"Can I use physical cash?",check_payment_methods
+"Do you take small notes?",check_payment_methods
+"Is the security deposit compulsory?",check_payment_methods
+"Do you accept Touch n Go eWallet?",check_payment_methods
+"Can I pay by AMEX card?",check_payment_methods
+"Do you accept digital wallets?",check_payment_methods
+"How do I make payment?",check_payment_methods
+"What are your payment rules?",check_payment_methods
+"Do you allow card payment for deposit?",check_payment_methods
+"Can I pay by cash for the room?",check_payment_methods
+"Is deposit paid upfront?",check_payment_methods
+"Do you refund deposit instantly?",check_payment_methods
+"Is the RM100 deposit required?",check_payment_methods
+"What types of payment do you offer?",check_payment_methods
+"Can I pay using a foreign card?",check_payment_methods
+"How can I pay for my stay?",check_payment_methods
+"Can I use an e-wallet for deposit?",check_payment_methods
+"Do you accept card tap payment?",check_payment_methods
+"Do you allow contactless card?",check_payment_methods
+"What payment does the hotel take?",check_payment_methods
+"Do you accept Amex for reservations?",check_payment_methods
+"Can I settle my bill via card?",check_payment_methods
+"Are credit cards accepted?",check_payment_methods
+"Are debit cards accepted?",check_payment_methods
+"Does the hotel accept GrabPay?",check_payment_methods
+"Do I need to pay deposit?",check_payment_methods
+"Are payments refundable?",check_payment_methods
+"Can I pay using cash on arrival?",check_payment_methods
+"What do I need to pay at check-in?",check_payment_methods
+"Is deposit returned during check-out?",check_payment_methods
+"Do you accept any e-wallet?",check_payment_methods
+"I lost something in the hotel, what do I do?",check_lost_item
+"I misplaced my item, can you help?",check_lost_item
+"I think I left something in my room.",check_lost_item
+"How do I report a lost item?",check_lost_item
+"Where do I go for lost and found?",check_lost_item
+"Who do I contact for missing items?",check_lost_item
+"I lost my wallet at the hotel.",check_lost_item
+"I can't find my bag, what should I do?",check_lost_item
+"I dropped something, can the hotel help?",check_lost_item
+"How do I check lost and found?",check_lost_item
+"Can you check the lost and found room?",check_lost_item
+"I think I left my charger behind.",check_lost_item
+"My belongings are missing.",check_lost_item
+"Did anyone find my item?",check_lost_item
+"I need to report a missing item.",check_lost_item
+"Can the security team check lost items?",check_lost_item
+"Who handles lost items at the hotel?",check_lost_item
+"I lost something during my stay.",check_lost_item
+"Help me track my lost item.",check_lost_item
+"I forgot my item in the lobby.",check_lost_item
+"I left my headphones in the room.",check_lost_item
+"I think housekeeping found my item.",check_lost_item
+"Where do I claim lost items?",check_lost_item
+"I lost something important.",check_lost_item
+"I can't find my watch.",check_lost_item
+"I misplaced something in your hotel.",check_lost_item
+"Can you help me retrieve my lost item?",check_lost_item
+"I think I left something downstairs.",check_lost_item
+"I lost my passport, please assist.",check_lost_item
+"How do I check if my item is found?",check_lost_item
+"Can you look into the lost item log?",check_lost_item
+"I lost my earphones here.",check_lost_item
+"I forgot something after checking out.",check_lost_item
+"I left something behind after checkout.",check_lost_item
+"I lost my keys at the hotel.",check_lost_item
+"I dropped something in the hallway.",check_lost_item
+"What is the lost item procedure?",check_lost_item
+"I suspect I left something at reception.",check_lost_item
+"Can the hotel find missing things?",check_lost_item
+"I lost an item, who do I approach?",check_lost_item
+"Where is the lost and found counter?",check_lost_item
+"Please check lost and found for me.",check_lost_item
+"I lost my necklace here.",check_lost_item
+"Who manages missing items?",check_lost_item
+"Is there a lost and found department?",check_lost_item
+"I misplaced my belongings.",check_lost_item
+"My luggage is missing.",check_lost_item
+"I think security has my item.",check_lost_item
+"I left something at the restaurant.",check_lost_item
+"Did housekeeping find my item?",check_lost_item
+"I lost my identification card.",check_lost_item
+"My item went missing, help.",check_lost_item
+"I can't find my camera.",check_lost_item
+"I think I left my tablet in the room.",check_lost_item
+"Can you check your lost and found?",check_lost_item
+"I dropped my ring somewhere.",check_lost_item
+"Help me find my missing belongings.",check_lost_item
+"I left my jacket behind.",check_lost_item
+"Please assist with lost item.",check_lost_item
+"Can someone help me check lost items?",check_lost_item
+"I forgot my powerbank in the room.",check_lost_item
+"I need help locating my lost property.",check_lost_item
+"I lost something at check-in.",check_lost_item
+"I left something at check-out.",check_lost_item
+"How do I recover a lost item?",check_lost_item
+"I lost an item in the lift.",check_lost_item
+"I think I lost my things here.",check_lost_item
+"Do you keep lost items?",check_lost_item
+"What happens to found items?",check_lost_item
+"I lost my sunglasses.",check_lost_item
+"I can't find my belonging.",check_lost_item
+"Help me check your lost item records.",check_lost_item
+"I left my umbrella somewhere.",check_lost_item
+"Someone might have found my item.",check_lost_item
+"Do you log missing items?",check_lost_item
+"Where do I report a missing thing?",check_lost_item
+"I think housekeeping kept my item.",check_lost_item
+"Is there a lost and found team?",check_lost_item
+"Can I claim my missing item?",check_lost_item
+"I left my perfume in the room.",check_lost_item
+"I lost something last night.",check_lost_item
+"I lost property at your hotel.",check_lost_item
+"I forgot my stuff in the room.",check_lost_item
+"I left items behind accidentally.",check_lost_item
+"Please help me retrieve my item.",check_lost_item
+"Where can I ask about my missing item?",check_lost_item
+"Is my lost item found yet?",check_lost_item
+"My lost item might be with security.",check_lost_item
+"Did anyone turn in my item?",check_lost_item
+"My missing item might be in lost and found.",check_lost_item
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+What room types do you have?,check_room_type
+Tell me the types of rooms available.,check_room_type
+Show me your room categories.,check_room_type
+What kind of rooms are offered?,check_room_type
+List the rooms you provide.,check_room_type
+I want to know the room types.,check_room_type
+Do you have different room types?,check_room_type
+Explain your room options.,check_room_type
+What rooms can I choose from?,check_room_type
+Tell me all your room categories.,check_room_type
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+Is there any room available?,check_room_availability
+Check room availability for me.,check_room_availability
+Are rooms available on my dates?,check_room_availability
+Do you have rooms open now?,check_room_availability
+Can you verify availability?,check_room_availability
+I want to check if rooms are free.,check_room_availability
+Any rooms available this week?,check_room_availability
+See if you have free rooms.,check_room_availability
+Is there vacancy?,check_room_availability
+Check if any rooms are not booked.,check_room_availability
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
+What attractions are near the hotel?,check_nearby_attractions
+Tell me places to visit nearby.,check_nearby_attractions
+What's around the hotel?,check_nearby_attractions
+Any tourist spots close to the hotel?,check_nearby_attractions
+Show me nearby attractions.,check_nearby_attractions
+What can I see around here?,check_nearby_attractions
+Recommend places near the hotel.,check_nearby_attractions
+Anything interesting near the hotel?,check_nearby_attractions
+What landmarks are close by?,check_nearby_attractions
+List the attractions near your location.,check_nearby_attractions
