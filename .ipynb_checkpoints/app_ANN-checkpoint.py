@@ -228,22 +228,36 @@ def main():
 
     # --- 3. Suggested Questions (Buttons) ---
     # Select 4 random intents for suggestions (increased to 4 for better variety)
-    if SUGGESTED_INTENTS:
-        # Ensure we don't try to select more than available
-        num_suggestions = min(4, len(SUGGESTED_INTENTS))
-        random_intents = random.sample(SUGGESTED_INTENTS, num_suggestions)
+    if "random_intents" not in st.session_state:
+        # Only generate new random intents if they are not already stored
+        if SUGGESTED_INTENTS:
+            num_suggestions = min(4, len(SUGGESTED_INTENTS))
+            # Save the random sample to session state
+            st.session_state.random_intents = random.sample(SUGGESTED_INTENTS, num_suggestions)
+        else:
+            st.session_state.random_intents = []
 
+    # Retrieve the persistent list of intents from the session state
+    current_intents = st.session_state.random_intents
+
+    if current_intents:
         st.markdown("**Suggested Questions:**")
-        cols = st.columns(num_suggestions)
+        cols = st.columns(len(current_intents))
 
-        # Iterate through random intents to create buttons
-        for i, intent_key in enumerate(random_intents):
+        # Iterate through the stored intents to create buttons
+        for i, intent_key in enumerate(current_intents):
             prompt_instruction = PROMPT_MAPPING.get(intent_key, intent_key)
             with cols[i]:
-                # Check if the button is clicked, and if so, set the input instruction
+                # Check if the button is clicked
                 if st.button(prompt_instruction, key=f"btn_{intent_key}", use_container_width=True):
-                    # Store the button instruction in session_state and trigger a rerun
+                    # 1. Capture the user's selection into pending_input
                     st.session_state.pending_input = prompt_instruction
+                    
+                    # Clear the stored random intents.This ensures that AFTER the bot answers, a FRESH set of random suggestions will be generated for the next turn.
+                    if "random_intents" in st.session_state:
+                        del st.session_state.random_intents
+                    
+                    # Force an immediate rerun to process the pending input
                     st.rerun()
 
     # --- 4. Handle User/Button Input ---
