@@ -13,8 +13,7 @@ import re
 from sklearn.neural_network import MLPClassifier 
 
 # --- Configuration Parameters ---
-MAX_SEQUENCE_LENGTH = 20 
-CONFIDENCE_THRESHOLD = 0.50 
+CONFIDENCE_THRESHOLD = 0.75 
 
 # --- A. LOAD RESPONSES FROM JSON ---
 @st.cache_data
