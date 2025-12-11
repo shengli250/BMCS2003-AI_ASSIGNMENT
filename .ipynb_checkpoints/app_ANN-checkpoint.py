@@ -192,6 +192,7 @@ def main():
 
     st.title("🏨 Astra Imperium Hotel FAQ Chatbot")
     st.caption("Powered by MLPClassifier (Sparse Matrix Optimization)")
+    st.caption(f"Confidence Threshold: {CONFIDENCE_THRESHOLD}")
     st.markdown("Ask me about room rates, availability, facilities, and more!")
 
     # 1. Initialize chat history
