@@ -13,7 +13,7 @@ import re
 from sklearn.neural_network import MLPClassifier 
 
 # --- Configuration Parameters ---
-CONFIDENCE_THRESHOLD = 0.75 
+CONFIDENCE_THRESHOLD = 0.70
 
 # --- A. LOAD RESPONSES FROM JSON ---
 @st.cache_data
